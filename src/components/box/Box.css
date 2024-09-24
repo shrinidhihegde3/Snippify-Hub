@@ -1,0 +1,59 @@
+.background {
+  position: fixed; /* Change to fixed to cover the whole viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensure it's behind other content */
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  overflow: auto;
+
+  --border-angle: 0turn;
+  /* For animation */
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #3C0663,
+    #3C0663 5%,
+    #3C0663 60%,
+    #3C0663 95%
+  );
+
+  border: solid 5px transparent;
+  border-radius: 1em;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent 10%,
+    #BD68EE 40%,
+    #AB51E3 65%,
+    #8B2FC9 80%,
+    transparent 75%
+  );
+
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+    #3C0663;
+  /* Set solid background color for the box */
+
+  background-position: center center;
+
+  animation: bg-spin 15s linear infinite;
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
