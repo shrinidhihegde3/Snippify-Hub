@@ -83,7 +83,7 @@ Find or create an issue related to your feature or fix.
   - Use case
   - Reference
 
-- For reference check https://github.com/shrinidhihegde3/Snippify-Hub.git/src/snippets/C++/bubblesort.tsx
+- For reference check [https://github.com/shrinidhihegde3/Snippify-Hub.git/src/snippets/C++/bubblesort.tsx](https://github.com/shrinidhihegde3/Snippify-Hub/blob/master/src/snippets/C%2B%2B/bubbleSort.tsx)
 
 Contributors are awarded points based on the quality and complexity of their contributions.
 
