@@ -1,5 +1,5 @@
 import Box from "./components/box/Box";
-import HelloWorldCode from "./snippets/bubbleSort";
+import HelloWorldCode from "./snippets/C++/bubbleSort";
 
 const App = () => {
   return (

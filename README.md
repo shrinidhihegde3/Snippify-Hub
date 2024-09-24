@@ -1,50 +1,110 @@
-# React + TypeScript + Vite
+# 🚀 Code Snippet Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Code Snippet Repository**! This repository contains curated code snippets across different programming languages, categories, and use cases to help developers quickly find and contribute reusable code. Whether you're here to use, learn, or contribute, we've got you covered!
 
-Currently, two official plugins are available:
+#### Its a ReactJS project with Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Star ⭐ | Fork 🔗 | Contribute 💻
 
-## Expanding the ESLint configuration
+## ✨ What This Repo Does
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This repository is designed to:
+- Provide **pre-built code snippets** for various programming languages (JavaScript, Python, C++, etc.).
+- Offer **algorithms, data structures, and common utilities** code snippets.
+- Highlight code using **syntax highlighting** and allow easy copy-paste functionality.
 
-- Configure the top-level `parserOptions` property like this:
+You can browse, search, and copy code directly from the interface to enhance your projects.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🎯 How to Fork and Work on This Repo
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Fork the repository** by clicking on the `Fork` button at the top-right of this page.
+2. **Clone the forked repository** to your local machine:
+   ```bash
+   git clone https://github.com/shrinidhihegde3/Snippify-Hub.git
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+
+To create a detailed README.md for your Code Snippet Repository, including instructions, contribution guidelines, evaluation criteria, and formatting, here’s a markdown template with code blocks, headings, bold text, and other formatting elements to make it clear and attractive.
+
+README.md Template
+markdown
+Copy code
+# 🚀 Code Snippet Repository
+
+Welcome to the **Code Snippet Repository**! This repository contains curated code snippets across different programming languages, categories, and use cases to help developers quickly find and contribute reusable code. Whether you're here to use, learn, or contribute, we've got you covered!
+
+## ✨ What This Repo Does
+
+This repository is designed to:
+- Provide **pre-built code snippets** for various programming languages (JavaScript, Python, C++, etc.).
+- Offer **algorithms, data structures, and common utilities** code snippets.
+- Highlight code using **syntax highlighting** and allow easy copy-paste functionality.
+
+You can browse, search, and copy code directly from the interface to enhance your projects.
+
+---
+
+## 🎯 How to Fork and Work on This Repo
+
+1. **Fork the repository** by clicking on the `Fork` button at the top-right of this page.
+2. **Clone the forked repository** to your local machine:
+   ```bash
+   git clone https://github.com/your-username/code-snippet-repo.git
+
+## Instructions 🎒
+
+#### Do's:
+1) Provide Issue Number in the PR.
+2) Work on Assigned Issue only.
+3) You can raise new Issue
+
+#### Dont's:
+1) Do not raise PR for issues not assigned to you.
+
+### Maintainers/admins/collaborators of this repository/project/website hold all the rights to amend/add/remove any document wherever/whenever is found necessary.
+
+<br/>
+
+# 🏗️ Contribution Guidelines
+## We welcome contributions from the community! Follow these steps to contribute:
+
+Find or create an issue related to your feature or fix.
+1. Follow the folder structure for new snippets:
+  - src/snippets/javascript
+  - src/snippets/python
+  - src/snippets/c++
+2. Ensure that each snippet contains:
+  - Well-documented comments explaining the code.
+  - A copy button for ease of use.
+3. Ensure Your Snippet containts:
+  - How to Use
+  - Use case
+  - Reference
+
+- For reference check [https://github.com/shrinidhihegde3/Snippify-Hub.git/src/snippets/C++/bubblesort.tsx](https://github.com/shrinidhihegde3/Snippify-Hub/blob/master/src/snippets/C%2B%2B/bubbleSort.tsx)
+
+Contributors are awarded points based on the quality and complexity of their contributions.
+
+## 📝 Evaluation Criteria for Contributions
+# All contributions are evaluated based on the following criteria:
+
+| Criteria                | Points                                                                 |
+|-------------------------|-----------------------------------------------------------------------------|
+| Easy                    | 5           |
+| Medium                  | 10          |
+| Hard                    | 15          |
+| Well-written documentation	| 5          |
+
+
+
+
+
+
+
+
+
+
+
+
