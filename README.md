@@ -17,7 +17,7 @@ You can browse, search, and copy code directly from the interface to enhance you
 
 ---
 
-# Before contributing read https://github.com/shrinidhihegde3/Snippify-Hub/blob/main/CONTRIBUTING.md
+## Before contributing read [CONTRIBUTING.md](https://github.com/shrinidhihegde3/Snippify-Hub/blob/main/CONTRIBUTING.md)
 
 ## 🎯 How to Fork and Work on This Repo
 
