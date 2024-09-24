@@ -17,6 +17,8 @@ You can browse, search, and copy code directly from the interface to enhance you
 
 ---
 
+# Before contributing read https://github.com/shrinidhihegde3/Snippify-Hub/blob/main/CONTRIBUTING.md
+
 ## 🎯 How to Fork and Work on This Repo
 
 1. **Fork the repository** by clicking on the `Fork` button at the top-right of this page.
