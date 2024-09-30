@@ -1,0 +1,85 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      "header header"
+      "sidebar main"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  /* Layout for larger screens */
+  header {
+    grid-area: header;
+    background-color: #007bff;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  aside {
+    grid-area: sidebar;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  main {
+    grid-area: main;
+    background-color: #e9ecef;
+    padding: 20px;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: #343a40;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Flexbox used within the main content */
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .box {
+    background-color: #6c757d;
+    color: white;
+    flex: 1 1 150px; /* Grow, shrink, basis width */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-areas: 
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box {
+      flex: 1 1 100%; /* Stacks boxes on smaller screens */
+    }
+  }
+/* ADDED THE REQUIRED FILE LIKE gridFlex.tsx AND gridFlex.css */
