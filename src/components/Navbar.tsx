@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SnippifyLogo from '../assets/Snippify transparent.gif';
 
+
 const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
@@ -24,12 +25,19 @@ const Navbar = () => {
   return (
     <div className="w-full flex items-center justify-between p-4 bg-gradient-to-r from-[rgb(66,6,99)] to-[rgb(80,31,115)] shadow-lg border-b-4 border-[rgb(80,31,115)]">
       <div className="flex items-center">
-        <img className="h-20 w-22 border-2 border-[rgb(88,24,116)] shadow-md hover:scale-110 transition-transform duration-500 ease-in-out" src={SnippifyLogo} alt="snippify logo" />
+        <img
+          className="h-20 w-22 border-2 border-[rgb(88,24,116)] shadow-md hover:scale-110 transition-transform duration-500 ease-in-out"
+          src={SnippifyLogo}
+          alt="snippify logo"
+          onClick={() => navigate("/")}
+        />
       </div>
 
       <div className="flex-grow ml-4">
         <form onSubmit={(e) => e.preventDefault()} className="max-w-md mx-auto">
-          <label htmlFor="default-search" className="sr-only">Search</label>
+          <label htmlFor="default-search" className="sr-only">
+            Search
+          </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <svg

@@ -1,4 +1,4 @@
-import CodeSnippet from "../../../components/codeSnippet";
+import CodeSnippet from "../../components/codeSnippet";
 
 const AStar = () => {
   // Object containing code snippets for each language

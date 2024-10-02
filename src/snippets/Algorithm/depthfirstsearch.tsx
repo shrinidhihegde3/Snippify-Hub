@@ -1,5 +1,4 @@
-import React from "react";
-import CodeSnippet from "../../../components/codeSnippet";
+import CodeSnippet from "../../components/codeSnippet";
 
 const DepthFirstSearch = () => {
   const cppCode = `
