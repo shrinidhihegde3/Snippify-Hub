@@ -8,7 +8,7 @@ import AStar from "./snippets/Algorithm/AStar";
 import BinarySearch from "./snippets/Algorithm/binarysearch";
 import DepthFirstSearch from "./snippets/Algorithm/depthfirstsearch";
 import BellmanFordCode from "./snippets/C++/bellman-ford";
-import RateLimitingMiddlewareExpress from "./snippets/javascript/rateLimitMiddlewareExpress";
+import RateLimitingMiddlewareExpress from "./snippets/javascript/RateLimitMiddlewareExpress";
 
 const App = () => {
   return (
