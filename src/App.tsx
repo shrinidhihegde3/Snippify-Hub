@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Box from "./components/box/Box";
-import Navbar from "./components/Navbar";
-import HelloWorldCode from "./snippets/C++/bubbleSort"; // This is your bubble sort component
-
+import HelloWorldCode from "./snippets/C++/bubbleSort";
+import MergeSort from "./snippets/C++/MergeSort";
 
 const App = () => {
   return (
