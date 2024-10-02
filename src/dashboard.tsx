@@ -16,9 +16,6 @@ const Dashboard = () => {
             route="/rateLimitingMiddleware"
           />
           <Card title="Debounce Function" route="/debounceFunction" />
-          <Card title="Fetch API" route="/fetchAPI" />
-          <Card title="Axios" route="/axios" />
-          <Card title="XMLHttpRequest" route="/XMLHttpRequest" />
         </div>
       </div>
     </div>
