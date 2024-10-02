@@ -10,6 +10,9 @@ import DepthFirstSearch from "./snippets/Algorithm/depthfirstsearch";
 import BellmanFordCode from "./snippets/C++/bellman-ford";
 import RateLimitingMiddlewareExpress from "./snippets/javascript/RateLimitMiddlewareExpress";
 import DebounceFunction from "./snippets/javascript/DebounceFunction";
+import FetchAPICode from "./snippets/web/fetchAPI";
+import AxiosCode from "./snippets/web/axios";
+import XMLHttpRequestCode from "./snippets/web/XMLHttpRequest";
 
 const App = () => {
   return (
@@ -25,8 +28,14 @@ const App = () => {
             <Route path="/binaysearch" element={<BinarySearch />} />
             <Route path="/dfs" element={<DepthFirstSearch />} />
             <Route path="/bellmanford" element={<BellmanFordCode />} />
-            <Route path="/rateLimitingMiddleware" element={<RateLimitingMiddlewareExpress />} />
+            <Route
+              path="/rateLimitingMiddleware"
+              element={<RateLimitingMiddlewareExpress />}
+            />
             <Route path="/debounceFunction" element={<DebounceFunction />} />
+            <Route path="/fetchAPI" element={<FetchAPICode />} />
+            <Route path="/axios" element={<AxiosCode />} />
+            <Route path="/XMLHttpRequest" element={<XMLHttpRequestCode />} />
           </Routes>
         </div>
       </Box>
