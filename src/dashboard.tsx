@@ -7,6 +7,7 @@ const Dashboard = () => {
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
           <Card title="Bubble Sort" route="/bubblesort" />
           <Card title="Merge Sort" route="/mergesort" />
+          <Card title="Heap Sort" route="/heapsort" />
           <Card title="A Star" route="/astar" />
           <Card title="Binary Search" route="/binaysearch" />
           <Card title="Depth First Search" route="/dfs" />
@@ -16,6 +17,9 @@ const Dashboard = () => {
             route="/rateLimitingMiddleware"
           />
           <Card title="Debounce Function" route="/debounceFunction" />
+          <Card title="Chaining Promises" route="/chainingPromises" />
+          <Card title="Dijkstra Algorithm" route="/dijkstraalgorithm" />
+          <Card title="Jwt Authentication Flow" route="/jwtauthentication" />
           <Card title="Fetch API" route="/fetchAPI" />
           <Card title="Axios" route="/axios" />
           <Card title="XMLHttpRequest" route="/xmlhttprequest" />
