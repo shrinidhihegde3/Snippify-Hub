@@ -72,6 +72,8 @@ Contributors are awarded points based on the quality and complexity of their con
 | Well-written documentation	| 5          |
 
 
+## [Contribution Points Table](https://docs.google.com/spreadsheets/d/1hIlVf_ihUG4SuDe_o4330SGlZacrRw6Guigw39m9wmg/edit?gid=0#gid=0)
+
 
 
 
