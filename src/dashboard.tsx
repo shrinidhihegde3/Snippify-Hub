@@ -13,6 +13,7 @@ const Dashboard = () => {
           <Card title="Bellman Ford" route="/bellmanford" />
           <Card title="Rate Limiting Middleware" route="/rateLimitingMiddleware" />
           <Card title="Debounce Function" route="/debounceFunction" />
+          <Card title="Chaining Promises" route="/chainingPromises" />
         </div>
       </div>
     </div>
