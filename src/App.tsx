@@ -14,7 +14,7 @@ import ChainingProimises from "./snippets/javascript/ChainingPromises";
 import HeapSort from "./snippets/C++/heapSort";
 import DijkstraAlgorithm from "./snippets/Algorithm/DijkstraAlgorithm";
 import JWTAuthenticationFlow from "./snippets/javascript/JwtAuthenticationFlow";
-import AdvancedMultiLangThreadSynchronization from "./snippets/MultiLanguage/ThreadSynchronizationJava";
+import AdvancedMultiLangThreadSynchronization from "./snippets/MultiLanguage/ThreadSynchronization";
 
 const App = () => {
   return (
