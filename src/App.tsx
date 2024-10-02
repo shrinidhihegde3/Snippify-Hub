@@ -13,11 +13,6 @@ import DebounceFunction from "./snippets/javascript/DebounceFunction";
 
 const App = () => {
   return (
-<<<<<<< HEAD
-    <Box>
-      <HelloWorldCode />
-    </Box>
-=======
     <Router>
       <Box>
         <div className="w-full flex flex-col items-center">
@@ -36,7 +31,6 @@ const App = () => {
         </div>
       </Box>
     </Router>
->>>>>>> main
   );
 };
 
