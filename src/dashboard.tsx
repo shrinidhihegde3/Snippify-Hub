@@ -1,4 +1,4 @@
-import Card from './components/card'
+import Card from "./components/card";
 
 const Dashboard = () => {
   return (
@@ -11,13 +11,18 @@ const Dashboard = () => {
           <Card title="Binary Search" route="/binaysearch" />
           <Card title="Depth First Search" route="/dfs" />
           <Card title="Bellman Ford" route="/bellmanford" />
-          <Card title="Rate Limiting Middleware" route="/rateLimitingMiddleware" />
+          <Card
+            title="Rate Limiting Middleware"
+            route="/rateLimitingMiddleware"
+          />
           <Card title="Debounce Function" route="/debounceFunction" />
-          <Card title="Chaining Promises" route="/chainingPromises" />
+          <Card title="Fetch API" route="/fetchAPI" />
+          <Card title="Axios" route="/axios" />
+          <Card title="XMLHttpRequest" route="/xmlhttprequest" />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Dashboard
+export default Dashboard;
