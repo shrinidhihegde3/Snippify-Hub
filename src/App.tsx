@@ -14,6 +14,7 @@ import ChainingProimises from "./snippets/javascript/ChainingPromises";
 import HeapSort from "./snippets/C++/heapSort";
 import DijkstraAlgorithm from "./snippets/Algorithm/DijkstraAlgorithm";
 import JWTAuthenticationFlow from "./snippets/javascript/JwtAuthenticationFlow";
+import ThreadSynchronizationJava from "./snippets/Java/ThreadSynchronizationJava";
 import FetchAPICode from "./snippets/web/fetchAPI";
 import AxiosCode from "./snippets/web/axios";
 import XMLHttpRequestCode from "./snippets/web/XMLHttpRequest";
@@ -41,6 +42,7 @@ const App = () => {
             <Route path="/heapSort" element={<HeapSort />} />
             <Route path="/dijkstraalgorithm" element={<DijkstraAlgorithm />} />
             <Route path="/jwtauthentication" element={<JWTAuthenticationFlow />} />
+            <Route path="/threadsynchronizationJava" element={<ThreadSynchronizationJava />} />
             <Route path="/fetchAPI" element={<FetchAPICode />} />
             <Route path="/axios" element={<AxiosCode />} />
             <Route path="/xmlhttprequest" element={<XMLHttpRequestCode />} />

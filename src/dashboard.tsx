@@ -20,6 +20,8 @@ const Dashboard = () => {
           <Card title="Chaining Promises" route="/chainingPromises" />
           <Card title="Dijkstra Algorithm" route="/dijkstraalgorithm" />
           <Card title="Jwt Authentication Flow" route="/jwtauthentication" />
+          <Card title="Thread Synchronization Java" route="/threadsynchronizationJava" />
+
           <Card title="Fetch API" route="/fetchAPI" />
           <Card title="Axios" route="/axios" />
           <Card title="XMLHttpRequest" route="/xmlhttprequest" />
