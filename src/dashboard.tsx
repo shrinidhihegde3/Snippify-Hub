@@ -12,6 +12,7 @@ const Dashboard = () => {
           <Card title="Depth First Search" route="/dfs" />
           <Card title="Bellman Ford" route="/bellmanford" />
           <Card title="Rate Limiting Middleware" route="/rateLimitingMiddleware" />
+          <Card title="Debounce Function" route="/debounceFunction" />
         </div>
       </div>
     </div>
