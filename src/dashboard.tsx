@@ -17,7 +17,7 @@ const Dashboard = () => {
           <Card title="Chaining Promises" route="/chainingPromises" />
           <Card title="Dijkstra Algorithm" route="/dijkstraalgorithm" />
           <Card title="Jwt Authentication Flow" route="/jwtauthentication" />
-
+          <Card title="Thread Synchronization Java" route="/threadsynchronizationJava" />
         </div>
       </div>
     </div>
