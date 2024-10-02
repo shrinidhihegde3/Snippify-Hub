@@ -14,7 +14,7 @@ import ChainingProimises from "./snippets/javascript/ChainingPromises";
 import HeapSort from "./snippets/C++/heapSort";
 import DijkstraAlgorithm from "./snippets/Algorithm/DijkstraAlgorithm";
 import JWTAuthenticationFlow from "./snippets/javascript/JwtAuthenticationFlow";
-import ThreadSynchronizationJava from "./snippets/Java/ThreadSynchronizationJava";
+import AdvancedMultiLangThreadSynchronization from "./snippets/MultiLanguage/ThreadSynchronizationJava";
 
 const App = () => {
   return (
@@ -36,7 +36,7 @@ const App = () => {
             <Route path="/heapSort" element={<HeapSort />} />
             <Route path="/dijkstraalgorithm" element={<DijkstraAlgorithm />} />
             <Route path="/jwtauthentication" element={<JWTAuthenticationFlow />} />
-            <Route path="/threadsynchronizationJava" element={<ThreadSynchronizationJava />} />
+            <Route path="/threadsynchronization" element={<AdvancedMultiLangThreadSynchronization/>} />
           </Routes>
         </div>
       </Box>
