@@ -14,6 +14,9 @@ import ChainingProimises from "./snippets/javascript/ChainingPromises";
 import HeapSort from "./snippets/C++/heapSort";
 import DijkstraAlgorithm from "./snippets/Algorithm/DijkstraAlgorithm";
 import JWTAuthenticationFlow from "./snippets/javascript/JwtAuthenticationFlow";
+import FetchAPICode from "./snippets/web/fetchAPI";
+import AxiosCode from "./snippets/web/axios";
+import XMLHttpRequestCode from "./snippets/web/XMLHttpRequest";
 
 const App = () => {
   return (
@@ -29,12 +32,18 @@ const App = () => {
             <Route path="/binaysearch" element={<BinarySearch />} />
             <Route path="/dfs" element={<DepthFirstSearch />} />
             <Route path="/bellmanford" element={<BellmanFordCode />} />
-            <Route path="/rateLimitingMiddleware" element={<RateLimitingMiddlewareExpress />} />
+            <Route
+              path="/rateLimitingMiddleware"
+              element={<RateLimitingMiddlewareExpress />}
+            />
             <Route path="/debounceFunction" element={<DebounceFunction />} />
             <Route path="/chainingPromises" element={<ChainingProimises />} />
             <Route path="/heapSort" element={<HeapSort />} />
             <Route path="/dijkstraalgorithm" element={<DijkstraAlgorithm />} />
             <Route path="/jwtauthentication" element={<JWTAuthenticationFlow />} />
+            <Route path="/fetchAPI" element={<FetchAPICode />} />
+            <Route path="/axios" element={<AxiosCode />} />
+            <Route path="/xmlhttprequest" element={<XMLHttpRequestCode />} />
           </Routes>
         </div>
       </Box>
