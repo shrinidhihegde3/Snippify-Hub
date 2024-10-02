@@ -13,12 +13,9 @@ const Navbar = () => {
   const handleSearchClick = () => {
     // Keywords for each algorithm
     const bubbleSortKeywords = ["bubble sort", "bubble"];
-    const mergeSortKeywords = ["merge sort", "merge"];
     
     if (bubbleSortKeywords.some(keyword => searchTerm.includes(keyword))) {
       navigate("/bubble-sort"); // Route to Bubble Sort page
-    } else if (mergeSortKeywords.some(keyword => searchTerm.includes(keyword))) {
-      navigate("/merge-sort"); // Route to Merge Sort page
     } else {
       alert("No matching snippet found.");
     }
