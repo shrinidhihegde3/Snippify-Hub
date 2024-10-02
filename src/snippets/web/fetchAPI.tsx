@@ -24,7 +24,7 @@ fetch('https://api.example.com/data') // Replace with the actual API URL
 
   return (
     <div className="max-w-xs sm:max-w-lg lg:max-w-4xl mx-5">
-      <div className="my-8 p-6 bg-white/10 backdrop-blur-lg rounded-lg shadow-md border border-emerald-600">
+      <div className="my-8 p-6 bg-white/10 backdrop-blur-lg rounded-lg shadow-md border border-purple-900">
         <h1 className="text-4xl font-bold mb-4">Fetch API</h1>
         <div className="mt-8">
           <h2 className="text-4xl font-semibold mb-2">Use Case</h2>

@@ -4,7 +4,7 @@ import HelloWorldCode from "./snippets/C++/bubbleSort";
 const App = () => {
   return (
     <Box>
-        <HelloWorldCode />
+      <HelloWorldCode />
     </Box>
   );
 };
