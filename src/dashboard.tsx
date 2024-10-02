@@ -16,6 +16,8 @@ const Dashboard = () => {
           <Card title="Debounce Function" route="/debounceFunction" />
           <Card title="Chaining Promises" route="/chainingPromises" />
           <Card title="Dijkstra Algorithm" route="/dijkstraalgorithm" />
+          <Card title="Jwt Authentication Flow" route="/jwtauthentication" />
+
         </div>
       </div>
     </div>
