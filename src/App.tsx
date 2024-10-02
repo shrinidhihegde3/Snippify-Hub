@@ -8,6 +8,8 @@ import AStar from "./snippets/Algorithm/AStar";
 import BinarySearch from "./snippets/Algorithm/binarysearch";
 import DepthFirstSearch from "./snippets/Algorithm/depthfirstsearch";
 import BellmanFordCode from "./snippets/C++/bellman-ford";
+import RateLimitingMiddlewareExpress from "./snippets/javascript/RateLimitMiddlewareExpress";
+import DebounceFunction from "./snippets/javascript/DebounceFunction";
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
             <Route path="/binaysearch" element={<BinarySearch />} />
             <Route path="/dfs" element={<DepthFirstSearch />} />
             <Route path="/bellmanford" element={<BellmanFordCode />} />
+            <Route path="/rateLimitingMiddleware" element={<RateLimitingMiddlewareExpress />} />
+            <Route path="/debounceFunction" element={<DebounceFunction />} />
           </Routes>
         </div>
       </Box>
