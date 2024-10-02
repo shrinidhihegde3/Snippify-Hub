@@ -16,6 +16,11 @@ import DijkstraAlgorithm from "./snippets/Algorithm/DijkstraAlgorithm";
 import JWTAuthenticationFlow from "./snippets/javascript/JwtAuthenticationFlow";
 import AdvancedMultiLangThreadSynchronization from "./snippets/MultiLanguage/ThreadSynchronization";
 
+import ThreadSynchronizationJava from "./snippets/Java/ThreadSynchronizationJava";
+import FetchAPICode from "./snippets/web/fetchAPI";
+import AxiosCode from "./snippets/web/axios";
+import XMLHttpRequestCode from "./snippets/web/XMLHttpRequest";
+
 const App = () => {
   return (
     <Router>
@@ -30,13 +35,20 @@ const App = () => {
             <Route path="/binaysearch" element={<BinarySearch />} />
             <Route path="/dfs" element={<DepthFirstSearch />} />
             <Route path="/bellmanford" element={<BellmanFordCode />} />
-            <Route path="/rateLimitingMiddleware" element={<RateLimitingMiddlewareExpress />} />
+            <Route
+              path="/rateLimitingMiddleware"
+              element={<RateLimitingMiddlewareExpress />}
+            />
             <Route path="/debounceFunction" element={<DebounceFunction />} />
             <Route path="/chainingPromises" element={<ChainingProimises />} />
             <Route path="/heapSort" element={<HeapSort />} />
             <Route path="/dijkstraalgorithm" element={<DijkstraAlgorithm />} />
             <Route path="/jwtauthentication" element={<JWTAuthenticationFlow />} />
             <Route path="/threadsynchronization" element={<AdvancedMultiLangThreadSynchronization/>} />
+            <Route path="/threadsynchronizationJava" element={<ThreadSynchronizationJava />} />
+            <Route path="/fetchAPI" element={<FetchAPICode />} />
+            <Route path="/axios" element={<AxiosCode />} />
+            <Route path="/xmlhttprequest" element={<XMLHttpRequestCode />} />
           </Routes>
         </div>
       </Box>
