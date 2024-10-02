@@ -11,6 +11,8 @@ import BellmanFordCode from "./snippets/C++/bellman-ford";
 import RateLimitingMiddlewareExpress from "./snippets/javascript/RateLimitMiddlewareExpress";
 import DebounceFunction from "./snippets/javascript/DebounceFunction";
 import ChainingProimises from "./snippets/javascript/ChainingPromises";
+import HeapSort from "./snippets/C++/heapSort";
+import DijkstraAlgorithm from "./snippets/Algorithm/DijkstraAlgorithm";
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
             <Route path="/rateLimitingMiddleware" element={<RateLimitingMiddlewareExpress />} />
             <Route path="/debounceFunction" element={<DebounceFunction />} />
             <Route path="/chainingPromises" element={<ChainingProimises />} />
+            <Route path="/heapSort" element={<HeapSort />} />
+            <Route path="/dijkstraalgorithm" element={<DijkstraAlgorithm />} />
           </Routes>
         </div>
       </Box>
