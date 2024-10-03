@@ -11,6 +11,7 @@ const Dashboard = () => {
           <Card title="A Star" route="/astar" />
           <Card title="Binary Search" route="/binaysearch" />
           <Card title="Depth First Search" route="/dfs" />
+          <Card title="Breadth First Search" route="/bfs" />
           <Card title="Bellman Ford" route="/bellmanford" />
           <Card
             title="Rate Limiting Middleware"
