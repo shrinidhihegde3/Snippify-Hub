@@ -15,12 +15,12 @@ import HeapSort from "./snippets/C++/heapSort";
 import DijkstraAlgorithm from "./snippets/Algorithm/DijkstraAlgorithm";
 import JWTAuthenticationFlow from "./snippets/javascript/JwtAuthenticationFlow";
 import AdvancedMultiLangThreadSynchronization from "./snippets/MultiLanguage/ThreadSynchronization";
-
 // import ThreadSynchronizationJava from "./snippets/Java/ThreadSynchronizationJava";
 import FetchAPICode from "./snippets/web/fetchAPI";
 import AxiosCode from "./snippets/web/axios";
 import XMLHttpRequestCode from "./snippets/web/XMLHttpRequest";
 import WebSocket from "./snippets/javascript/WebSocket";
+import PalindromeChecker from "./snippets/palindromeChecker/palindrome";
 import BreadthFirstSearch from "./snippets/C++/BreadthFirstSearch"
 
 const App = () => {
@@ -43,6 +43,14 @@ const App = () => {
             <Route path="/chainingPromises" element={<ChainingProimises />} />
             <Route path="/heapSort" element={<HeapSort />} />
             <Route path="/dijkstraalgorithm" element={<DijkstraAlgorithm />} />
+            <Route
+              path="/jwtauthentication"
+              element={<JWTAuthenticationFlow />}
+            />
+            <Route
+              path="/threadsynchronization"
+              element={<AdvancedMultiLangThreadSynchronization />}
+            />
             <Route path="/jwtauthentication" element={<JWTAuthenticationFlow />} />
             <Route path="/threadsynchronization" element={<AdvancedMultiLangThreadSynchronization/>} />
             {/* <Route path="/threadsynchronizationJava" element={<ThreadSynchronizationJava />} /> */}
@@ -50,6 +58,7 @@ const App = () => {
             <Route path="/axios" element={<AxiosCode />} />
             <Route path="/xmlhttprequest" element={<XMLHttpRequestCode />} />
             <Route path="/WebSocket" element={<WebSocket />} />
+            <Route path="/checkPalindrome" element={<PalindromeChecker />} />
           </Routes>
         </div>
       </Box>
