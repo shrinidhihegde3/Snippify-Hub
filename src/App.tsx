@@ -20,6 +20,7 @@ import FetchAPICode from "./snippets/web/fetchAPI";
 import AxiosCode from "./snippets/web/axios";
 import XMLHttpRequestCode from "./snippets/web/XMLHttpRequest";
 import WebSocket from "./snippets/javascript/WebSocket";
+import PalindromeChecker from "./snippets/palindromeChecker/palindrome";
 
 const App = () => {
   return (
@@ -56,6 +57,7 @@ const App = () => {
             <Route path="/axios" element={<AxiosCode />} />
             <Route path="/xmlhttprequest" element={<XMLHttpRequestCode />} />
             <Route path="/WebSocket" element={<WebSocket />} />
+            <Route path="/checkPalindrome" element={<PalindromeChecker />} />
           </Routes>
         </div>
       </Box>
