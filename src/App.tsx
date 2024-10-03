@@ -21,7 +21,8 @@ import AxiosCode from "./snippets/web/axios";
 import XMLHttpRequestCode from "./snippets/web/XMLHttpRequest";
 import WebSocket from "./snippets/javascript/WebSocket";
 import PalindromeChecker from "./snippets/palindromeChecker/palindrome";
-import BreadthFirstSearch from "./snippets/C++/BreadthFirstSearch"
+import BreadthFirstSearch from "./snippets/C++/BreadthFirstSearch";
+import BlowfishCipher from "./snippets/Algorithm/BlowfishCipher";
 
 const App = () => {
   return (
@@ -59,6 +60,7 @@ const App = () => {
             <Route path="/xmlhttprequest" element={<XMLHttpRequestCode />} />
             <Route path="/WebSocket" element={<WebSocket />} />
             <Route path="/checkPalindrome" element={<PalindromeChecker />} />
+            <Route path="/blowfishcipher" element={<BlowfishCipher />} />
           </Routes>
         </div>
       </Box>
