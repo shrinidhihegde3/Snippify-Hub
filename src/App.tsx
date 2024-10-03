@@ -17,6 +17,7 @@ import JWTAuthenticationFlow from "./snippets/javascript/JwtAuthenticationFlow";
 import FetchAPICode from "./snippets/web/fetchAPI";
 import AxiosCode from "./snippets/web/axios";
 import XMLHttpRequestCode from "./snippets/web/XMLHttpRequest";
+import WebSocket from "./snippets/javascript/WebSocket";
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
             <Route path="/fetchAPI" element={<FetchAPICode />} />
             <Route path="/axios" element={<AxiosCode />} />
             <Route path="/xmlhttprequest" element={<XMLHttpRequestCode />} />
+            <Route path="/WebSocket" element={<WebSocket />} />
           </Routes>
         </div>
       </Box>

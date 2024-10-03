@@ -23,6 +23,7 @@ const Dashboard = () => {
           <Card title="Fetch API" route="/fetchAPI" />
           <Card title="Axios" route="/axios" />
           <Card title="XMLHttpRequest" route="/xmlhttprequest" />
+          <Card title="WebSocket" route="/WebSocket" />
         </div>
       </div>
     </div>
