@@ -22,7 +22,7 @@ import XMLHttpRequestCode from "./snippets/web/XMLHttpRequest";
 import WebSocket from "./snippets/javascript/WebSocket";
 import PalindromeChecker from "./snippets/palindromeChecker/palindrome";
 import BreadthFirstSearch from "./snippets/C++/BreadthFirstSearch";
-import BlowfishCipher from "./snippets/Algorithm/BlowfishCipher";
+import BlowfishCipher from "./snippets/Ciphers/BlowfishCipher";
 
 const App = () => {
   return (

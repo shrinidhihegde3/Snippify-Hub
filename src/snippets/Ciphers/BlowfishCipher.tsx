@@ -130,46 +130,65 @@ int main() {
           <h2 className="text-4xl font-semibold mb-2">Use Case</h2>
           <p className="mb-4">
             Blowfish is a fast block cipher that encrypts data in 64-bit blocks.
-            It is commonly used in various applications like File Encryption, VPNs, Secure Communication, Embedded Systems for securing sensitive data.
+            It is commonly used in various applications like File Encryption,
+            VPNs, Secure Communication, Embedded Systems for securing sensitive
+            data.
           </p>
           <h2 className="text-4xl font-semibold mb-2">How to Use</h2>
           <p>
-            To use the Blowfish cipher, start by generating a key that is between 32 and 448 bits in length. Next, initialize the cipher by utilizing a library such as PyCryptodome in Python to create a Blowfish cipher object. For the encryption process, simply pass the plaintext to this cipher object. When it comes to decryption, use the same key and cipher object on the ciphertext to retrieve the original plaintext. This straightforward approach allows for secure encryption and decryption of data.
+            To use the Blowfish cipher, start by generating a key that is
+            between 32 and 448 bits in length. Next, initialize the cipher by
+            utilizing a library such as PyCryptodome in Python to create a
+            Blowfish cipher object. For the encryption process, simply pass the
+            plaintext to this cipher object. When it comes to decryption, use
+            the same key and cipher object on the ciphertext to retrieve the
+            original plaintext. This straightforward approach allows for secure
+            encryption and decryption of data.
           </p>
         </div>
 
-        <h2 className="text-4xl font-semibold mb-2">Test the Blowfish Cipher</h2>
+        <h2 className="text-4xl font-semibold mb-2">
+          Test the Blowfish Cipher
+        </h2>
         <div className="mb-4">
           <input
             type="text"
             placeholder="Enter key"
             value={key}
             onChange={(e) => setKey(e.target.value)}
-            className="border border-gray-300 p-2 mb-2 w-full text-black"
+            className="border border-purple-600 p-3 mb-4 w-full text-black rounded-lg focus:outline-none focus:border-purple-800 focus:ring-2 focus:ring-purple-600"
           />
           <textarea
             placeholder="Enter text to encrypt/decrypt"
             value={text}
             onChange={(e) => setText(e.target.value)}
-            className="border border-gray-300 p-2 mb-2 w-full text-black"
+            className="border border-purple-600 p-3 mb-4 w-full text-black rounded-lg focus:outline-none focus:border-purple-800 focus:ring-2 focus:ring-purple-600"
           />
-          <div className="flex mb-2">
+          <div className="flex mb-4 gap-4">
             <button
               onClick={() => setMode("encrypt")}
-              className={`flex-1 p-2 ${mode === "encrypt" ? "bg-blue-500 text-white" : "bg-gray-300"}`}
+              className={`flex-1 p-3 rounded-lg transition-all duration-200 ${
+                mode === "encrypt"
+                  ? "bg-purple-700 text-white"
+                  : "bg-purple-100 text-purple-700 hover:bg-purple-200"
+              }`}
             >
               Encrypt
             </button>
             <button
               onClick={() => setMode("decrypt")}
-              className={`flex-1 p-2 ${mode === "decrypt" ? "bg-blue-500 text-white" : "bg-gray-300"}`}
+              className={`flex-1 p-3 rounded-lg transition-all duration-200 ${
+                mode === "decrypt"
+                  ? "bg-purple-700 text-white"
+                  : "bg-purple-100 text-purple-700 hover:bg-purple-200"
+              }`}
             >
               Decrypt
             </button>
           </div>
           <button
             onClick={handleSubmit}
-            className="bg-purple-500 text-white p-2 w-full hover:bg-purple-600 transition duration-200"
+            className="bg-purple-700 text-white p-3 w-full rounded-lg hover:bg-purple-800 transition duration-200"
           >
             Submit
           </button>
@@ -179,7 +198,7 @@ int main() {
         <textarea
           value={output}
           readOnly
-          className="border border-gray-300 p-2 mb-2 w-full text-black h-20"
+          className="border border-purple-600 p-3 mb-4 w-full text-black h-20 rounded-lg focus:outline-none"
         />
       </div>
       <CodeSnippet code={exampleCode} language="cpp" />
