@@ -42,7 +42,6 @@ void encrypt(const std::string &input, std::string &output, const std::string &k
     );
 }
 
-
 void decrypt(const std::string &input, std::string &output, const std::string &key) {
     using namespace CryptoPP;
 
@@ -72,7 +71,6 @@ void decrypt(const std::string &input, std::string &output, const std::string &k
     output = plainText;
 }
 
-
 int main() {
     std::string key = "your-secret-key"; // Use a proper key size for Blowfish (16 to 56 bytes)
     std::string input = "text to encrypt";
@@ -88,9 +86,7 @@ int main() {
     std::cout << "Decrypted: " << decrypted << std::endl;
 
     return 0;
-}
-
-`;
+  `;
 
   const [text, setText] = useState("");
   const [key, setKey] = useState("");
@@ -126,6 +122,7 @@ int main() {
     <div className="max-w-xs sm:max-w-lg lg:max-w-4xl mx-5">
       <div className="my-8 p-6 bg-white/10 backdrop-blur-lg rounded-lg shadow-md border border-purple-900">
         <h1 className="text-4xl font-bold mb-4">Blowfish Cipher Code in C++</h1>
+        
         <div className="mt-8">
           <h2 className="text-4xl font-semibold mb-2">Use Case</h2>
           <p className="mb-4">
@@ -133,6 +130,12 @@ int main() {
             It is commonly used in various applications like File Encryption,
             VPNs, Secure Communication, Embedded Systems for securing sensitive
             data.
+          </p>
+          <h2 className="text-4xl font-semibold mb-2">Reference</h2>
+        <p className="mb-4">
+          - Bruce Schneier, "Description of a New Variable-Length Key, 64-Bit Block Cipher (Blowfish)," Fast Software Encryption, Cambridge Security Workshop, 1993.
+          <br />
+          - William Stallings, "Cryptography and Network Security: Principles and Practice," Pearson, 7th Edition, 2017.
           </p>
           <h2 className="text-4xl font-semibold mb-2">How to Use</h2>
           <p>
@@ -146,10 +149,10 @@ int main() {
             encryption and decryption of data.
           </p>
         </div>
+      </div>
 
-        <h2 className="text-4xl font-semibold mb-2">
-          Test the Blowfish Cipher
-        </h2>
+      <div className="my-8 p-6 bg-white/10 backdrop-blur-lg rounded-lg shadow-md border border-purple-900">
+        <h2 className="text-4xl font-semibold mb-2">Test the Blowfish Cipher</h2>
         <div className="mb-4">
           <input
             type="text"
@@ -201,6 +204,7 @@ int main() {
           className="border border-purple-600 p-3 mb-4 w-full text-black h-20 rounded-lg focus:outline-none"
         />
       </div>
+
       <CodeSnippet code={exampleCode} language="cpp" />
     </div>
   );
