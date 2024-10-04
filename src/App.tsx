@@ -23,7 +23,6 @@ import WebSocket from "./snippets/javascript/WebSocket";
 import PalindromeChecker from "./snippets/palindromeChecker/palindrome";
 import BreadthFirstSearch from "./snippets/C++/BreadthFirstSearch";
 import BlowfishCipher from "./snippets/Ciphers/BlowfishCipher";
-import HillCipher from "./snippets/Ciphers/HillCipher";
 
 const App = () => {
   return (
@@ -62,7 +61,6 @@ const App = () => {
             <Route path="/WebSocket" element={<WebSocket />} />
             <Route path="/checkPalindrome" element={<PalindromeChecker />} />
             <Route path="/blowfishcipher" element={<BlowfishCipher />} />
-            <Route path="/hillcipher" element={<HillCipher />} />
           </Routes>
         </div>
       </Box>

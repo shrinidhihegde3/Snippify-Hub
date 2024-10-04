@@ -29,7 +29,6 @@ const Dashboard = () => {
           <Card title="XMLHttpRequest" route="/xmlhttprequest" />
           <Card title="WebSocket" route="/WebSocket" />
           <Card title="Blowfish Cipher" route="/blowfishcipher" />
-          <Card title="Hill Cipher" route="/hillcipher" />
         </div>
       </div>
     </div>
