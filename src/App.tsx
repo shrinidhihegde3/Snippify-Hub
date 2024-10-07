@@ -24,6 +24,7 @@ import PalindromeChecker from "./snippets/palindromeChecker/palindrome";
 import BreadthFirstSearch from "./snippets/C++/BreadthFirstSearch";
 import BlowfishCipher from "./snippets/Ciphers/BlowfishCipher";
 import HillCipher from "./snippets/Ciphers/HillCipher";
+import ListComprehension from "./snippets/Python/Listcomprehension";
 
 const App = () => {
   return (
@@ -63,6 +64,7 @@ const App = () => {
             <Route path="/checkPalindrome" element={<PalindromeChecker />} />
             <Route path="/blowfishcipher" element={<BlowfishCipher />} />
             <Route path="/hillcipher" element={<HillCipher />} />
+            <Route path="/listcomprehension" element={<ListComprehension />} />
           </Routes>
         </div>
       </Box>
