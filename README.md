@@ -81,6 +81,16 @@ Contributors are awarded points based on the quality and complexity of their con
 A heartfelt thank you to the following individuals for their valuable contributions to this project. Your support and dedication are greatly appreciated:
 
 <!-- readme: contributors -start -->
+@yatinsharmaa12
+@chinmayr633
+@Rajmathur-8
+@Harsh-Aakoliya
+@krishnaagrawal7508
+@ajay0180
+@anshuman008
+@kajal-jotwani
+@SanskariWolf
+@yashksaini-coder
 <!-- readme: contributors -end -->
 
 
