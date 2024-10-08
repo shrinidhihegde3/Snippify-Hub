@@ -32,6 +32,7 @@ const Dashboard = () => {
           <Card title="Hill Cipher" route="/hillcipher" />
           <Card title="List Comprehension" route="/listcomprehension" />
           <Card title="Web Scraper" route="/Web-scraper" />
+          <Card title="Affine Cipher" route="/affine-cipher" />
         </div>
       </div>
     </div>
