@@ -60,7 +60,7 @@ const WebScraper = () => {
                         For more information on web scraping, refer to the official Python documentation:
                         <br />
                         <a
-                            href="https://docs.python.org/3/library/urllib.html"
+                            href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
                             className="text-blue-400 hover:underline"
                         >
                             Python Documentation
