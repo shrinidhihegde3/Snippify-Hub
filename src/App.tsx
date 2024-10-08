@@ -25,6 +25,7 @@ import BreadthFirstSearch from "./snippets/C++/BreadthFirstSearch";
 import BlowfishCipher from "./snippets/Ciphers/BlowfishCipher";
 import HillCipher from "./snippets/Ciphers/HillCipher";
 import ListComprehension from "./snippets/Python/Listcomprehension";
+import WebScraper from "./snippets/Python/Web-scraper";
 
 const App = () => {
   return (
@@ -65,6 +66,7 @@ const App = () => {
             <Route path="/blowfishcipher" element={<BlowfishCipher />} />
             <Route path="/hillcipher" element={<HillCipher />} />
             <Route path="/listcomprehension" element={<ListComprehension />} />
+            <Route path="/Web-scraper" element={<WebScraper />} />
           </Routes>
         </div>
       </Box>

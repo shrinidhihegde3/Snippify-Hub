@@ -31,6 +31,7 @@ const Dashboard = () => {
           <Card title="Blowfish Cipher" route="/blowfishcipher" />
           <Card title="Hill Cipher" route="/hillcipher" />
           <Card title="List Comprehension" route="/listcomprehension" />
+          <Card title="Web Scraper" route="/Web-scraper" />
         </div>
       </div>
     </div>
