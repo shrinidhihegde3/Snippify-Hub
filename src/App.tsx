@@ -26,6 +26,7 @@ import BlowfishCipher from "./snippets/Ciphers/BlowfishCipher";
 import HillCipher from "./snippets/Ciphers/HillCipher";
 import ListComprehension from "./snippets/Python/Listcomprehension";
 import WebScraper from "./snippets/Python/Web-scraper";
+import AffineCipher from "./snippets/Ciphers/Affine-cipher";
 
 const App = () => {
   return (
@@ -67,6 +68,7 @@ const App = () => {
             <Route path="/hillcipher" element={<HillCipher />} />
             <Route path="/listcomprehension" element={<ListComprehension />} />
             <Route path="/Web-scraper" element={<WebScraper />} />
+            <Route path="/affine-cipher" element={<AffineCipher />} />
           </Routes>
         </div>
       </Box>
