@@ -33,6 +33,7 @@ const Dashboard = () => {
           <Card title="List Comprehension" route="/listcomprehension" />
           <Card title="Web Scraper" route="/Web-scraper" />
           <Card title="Affine Cipher" route="/affine-cipher" />
+          <Card title="Caeser Cipher" route="/caesercipher" />
         </div>
       </div>
     </div>

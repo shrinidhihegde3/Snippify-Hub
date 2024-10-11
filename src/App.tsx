@@ -27,7 +27,7 @@ import HillCipher from "./snippets/Ciphers/HillCipher";
 import ListComprehension from "./snippets/Python/Listcomprehension";
 import WebScraper from "./snippets/Python/Web-scraper";
 import AffineCipher from "./snippets/Ciphers/Affine-cipher";
-
+import CaeserCipher from "./snippets/Ciphers/CaeserCipher";
 const App = () => {
   return (
     <Router>
@@ -69,6 +69,7 @@ const App = () => {
             <Route path="/listcomprehension" element={<ListComprehension />} />
             <Route path="/Web-scraper" element={<WebScraper />} />
             <Route path="/affine-cipher" element={<AffineCipher />} />
+            <Route path="/caesercipher" element={<CaeserCipher />} />
           </Routes>
         </div>
       </Box>
