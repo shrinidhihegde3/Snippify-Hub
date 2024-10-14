@@ -129,31 +129,43 @@ print(f'Decrypted: {decrypted}')
         <h1 className="text-4xl font-bold mb-4">Caesar Cipher Code</h1>
         <h2 className="text-4xl font-semibold mb-2">Explanation</h2>
         <p className="mb-4">
-          The Caesar cipher is a type of substitution cipher where each letter in the plaintext is shifted 
-          by a certain number of positions down or up the alphabet. Named after Julius Caesar, who used it 
-          to encrypt his military messages, it involves shifting each letter of a message by a fixed number 
-          of positions based on the key.
+          The Caesar cipher is a type of substitution cipher where each letter
+          in the plaintext is shifted by a certain number of positions down or
+          up the alphabet. Named after Julius Caesar, who used it to encrypt his
+          military messages, it involves shifting each letter of a message by a
+          fixed number of positions based on the key.
         </p>
         <h2 className="text-4xl font-semibold mb-2">How to Use It</h2>
         <p className="mb-4">
-          To encrypt a message, simply choose a key (shift) value and shift each character by that number. 
-          To decrypt, shift the characters back by the same key. For example, with a key of 3, the letter 
-          'A' becomes 'D'. To decrypt, 'D' becomes 'A' again.
+          To encrypt a message, simply choose a key (shift) value and shift each
+          character by that number. To decrypt, shift the characters back by the
+          same key. For example, with a key of 3, the letter 'A' becomes 'D'. To
+          decrypt, 'D' becomes 'A' again.
         </p>
         <p className="mb-4">
-          The Caesar cipher is often used in simple encryption tasks and as an educational tool to teach 
-          cryptography fundamentals, particularly modular arithmetic. While not secure for modern use, it 
-          serves well for puzzles, encoding non-sensitive data, and teaching basic encryption.
+          The Caesar cipher is often used in simple encryption tasks and as an
+          educational tool to teach cryptography fundamentals, particularly
+          modular arithmetic. While not secure for modern use, it serves well
+          for puzzles, encoding non-sensitive data, and teaching basic
+          encryption.
         </p>
         <h2 className="text-4xl font-semibold mb-2">References</h2>
         <ul className="list-disc ml-5">
           <li>
-            <a href="https://en.wikipedia.org/wiki/Caesar_cipher" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://en.wikipedia.org/wiki/Caesar_cipher"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Caesar Cipher - Wikipedia
             </a>
           </li>
           <li>
-            <a href="https://www.sanfoundry.com/java-program-implement-caesar-cypher/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.sanfoundry.com/java-program-implement-caesar-cypher/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Cryptography and Network Security Principles - Sanfoundry
             </a>
           </li>
@@ -182,7 +194,9 @@ print(f'Decrypted: {decrypted}')
             type="text"
             placeholder="Enter key"
             value={key}
-            onChange={(e) => setKey(e.target.value)}
+            onChange={(e) =>
+              setKey(e.target.value === "" ? "" : parseInt(e.target.value))
+            }
             className="border border-purple-600 p-3 mb-4 w-full text-black rounded-lg focus:outline-none focus:border-purple-800 focus:ring-2 focus:ring-purple-600"
           />
           <textarea
@@ -194,13 +208,21 @@ print(f'Decrypted: {decrypted}')
           <div className="flex mb-4 gap-4">
             <button
               onClick={() => setMode("encrypt")}
-              className={`flex-1 p-3 rounded-lg transition-all duration-200 ${mode === "encrypt" ? "bg-purple-700 text-white" : "bg-purple-100 text-purple-700 hover:bg-purple-200"}`}
+              className={`flex-1 p-3 rounded-lg transition-all duration-200 ${
+                mode === "encrypt"
+                  ? "bg-purple-700 text-white"
+                  : "bg-purple-100 text-purple-700 hover:bg-purple-200"
+              }`}
             >
               Encrypt
             </button>
             <button
               onClick={() => setMode("decrypt")}
-              className={`flex-1 p-3 rounded-lg transition-all duration-200 ${mode === "decrypt" ? "bg-purple-700 text-white" : "bg-purple-100 text-purple-700 hover:bg-purple-200"}`}
+              className={`flex-1 p-3 rounded-lg transition-all duration-200 ${
+                mode === "decrypt"
+                  ? "bg-purple-700 text-white"
+                  : "bg-purple-100 text-purple-700 hover:bg-purple-200"
+              }`}
             >
               Decrypt
             </button>
@@ -223,9 +245,9 @@ print(f'Decrypted: {decrypted}')
 
       {/* Python Code Snippet */}
       <div className="my-8 p-6 bg-white/10 backdrop-blur-lg rounded-lg shadow-md border border-purple-900">
-      <h2 className="text-4xl font-semibold mb-2 mt-6">Java Code</h2>
+        <h2 className="text-4xl font-semibold mb-2 mt-6">Java Code</h2>
         <CodeSnippet code={caesercipherjava} language="java" />
-      
+
         <h2 className="text-4xl font-semibold mb-2 mt-6">Python Code</h2>
         <CodeSnippet code={caeserciphercode} language="python" />
       </div>
