@@ -27,14 +27,16 @@ import ListComprehension from "./snippets/Python/Listcomprehension";
 import WebScraper from "./snippets/Python/Web-scraper";
 import AffineCipher from "./snippets/Ciphers/Affine-cipher";
 import CaeserCipher from "./snippets/Ciphers/CaeserCipher";
+import { useState } from "react";
 const App = () => {
+  const [searchTerm, setSearchTerm] = useState("");
   return (
     <Router>
       <Box>
         <div className="w-full flex flex-col items-center">
-          <Navbar />
+          <Navbar setSearchTerm={setSearchTerm} />
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard searchTerm={searchTerm} />} />
             <Route path="/bubblesort" element={<BubbleSort />} />
             <Route path="/mergesort" element={<MergeSort />} />
             <Route path="/astar" element={<AStar />} />
@@ -42,13 +44,22 @@ const App = () => {
             <Route path="/dfs" element={<DepthFirstSearch />} />
             <Route path="/bfs" element={<BreadthFirstSearch />} />
             <Route path="/bellmanford" element={<BellmanFordCode />} />
-            <Route path="/rateLimitingMiddleware" element={<RateLimitingMiddlewareExpress />}/>
+            <Route
+              path="/rateLimitingMiddleware"
+              element={<RateLimitingMiddlewareExpress />}
+            />
             <Route path="/debounceFunction" element={<DebounceFunction />} />
             <Route path="/chainingPromises" element={<ChainingProimises />} />
             <Route path="/heapSort" element={<HeapSort />} />
             <Route path="/dijkstraalgorithm" element={<DijkstraAlgorithm />} />
-            <Route path="/jwtauthentication" element={<JWTAuthenticationFlow />} />
-            <Route path="/threadsynchronization" element={<AdvancedMultiLangThreadSynchronization/>} />
+            <Route
+              path="/jwtauthentication"
+              element={<JWTAuthenticationFlow />}
+            />
+            <Route
+              path="/threadsynchronization"
+              element={<AdvancedMultiLangThreadSynchronization />}
+            />
             <Route path="/fetchAPI" element={<FetchAPICode />} />
             <Route path="/axios" element={<AxiosCode />} />
             <Route path="/xmlhttprequest" element={<XMLHttpRequestCode />} />
