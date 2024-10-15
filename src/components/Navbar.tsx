@@ -1,25 +1,15 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import SnippifyLogo from '../assets/Snippify transparent.gif';
+import { useNavigate } from "react-router-dom";
+import SnippifyLogo from "../assets/Snippify transparent.gif";
 
-
-const Navbar = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+const Navbar = ({
+  setSearchTerm,
+}: {
+  setSearchTerm: (term: string) => void;
+}) => {
   const navigate = useNavigate();
-    
+
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value.toLowerCase());
-  };
-
-  const handleSearchClick = () => {
-    // Keywords for each algorithm
-    const bubbleSortKeywords = ["bubble sort", "bubble"];
-    
-    if (bubbleSortKeywords.some(keyword => searchTerm.includes(keyword))) {
-      navigate("/bubble-sort"); // Route to Bubble Sort page
-    } else {
-      alert("No matching snippet found.");
-    }
   };
 
   return (
@@ -66,7 +56,6 @@ const Navbar = () => {
             />
             <button
               type="button" // Change to type="button" to prevent form submission
-              onClick={handleSearchClick}
               className="absolute right-2.5 bottom-2.5 text-white bg-[rgb(100,50,150)] hover:bg-[rgb(120,80,180)] focus:ring-4 focus:outline-none focus:ring-[rgb(80,31,115)] font-medium rounded-lg text-sm px-4 py-2 transition-all duration-300 ease-in-out"
             >
               Search
