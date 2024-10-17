@@ -27,6 +27,8 @@ import ListComprehension from "./snippets/Python/Listcomprehension";
 import WebScraper from "./snippets/Python/Web-scraper";
 import AffineCipher from "./snippets/Ciphers/Affine-cipher";
 import CaeserCipher from "./snippets/Ciphers/CaeserCipher";
+import OAuth2_Authorization from "./snippets/javascript/OAuth2_Authorization";
+
 import { useState } from "react";
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -64,6 +66,7 @@ const App = () => {
             <Route path="/axios" element={<AxiosCode />} />
             <Route path="/xmlhttprequest" element={<XMLHttpRequestCode />} />
             <Route path="/WebSocket" element={<WebSocket />} />
+            <Route path="/OAuth2_Authorization" element={<OAuth2_Authorization/>} />
             <Route path="/checkPalindrome" element={<PalindromeChecker />} />
             <Route path="/blowfishcipher" element={<BlowfishCipher />} />
             <Route path="/hillcipher" element={<HillCipher />} />
