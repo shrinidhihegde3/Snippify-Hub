@@ -30,6 +30,7 @@ import CaeserCipher from "./snippets/Ciphers/CaeserCipher";
 import OAuth2_Authorization from "./snippets/javascript/OAuth2_Authorization";
 
 import { useState } from "react";
+import ChaChaCipher20 from "./snippets/Ciphers/ChaCha20-cipher";
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   return (
@@ -70,6 +71,7 @@ const App = () => {
             <Route path="/checkPalindrome" element={<PalindromeChecker />} />
             <Route path="/blowfishcipher" element={<BlowfishCipher />} />
             <Route path="/hillcipher" element={<HillCipher />} />
+            <Route path="/chacha_cipher20" element={<ChaChaCipher20 />} />
             <Route path="/listcomprehension" element={<ListComprehension />} />
             <Route path="/Web-scraper" element={<WebScraper />} />
             <Route path="/affine-cipher" element={<AffineCipher />} />
