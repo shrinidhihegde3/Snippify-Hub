@@ -1,5 +1,5 @@
-import React from 'react';
-import './ResponsiveLayout.css'; // Importing the CSS file for the styles
+import CodeSnippet from "../../components/codeSnippet";
+import '../../components/ResponsiveLayout.css'; // Importing the CSS file for the styles
 
 const ResponsiveLayout: React.FC = () => {
   return (
