@@ -8,7 +8,7 @@ const ChaChaCipher20 = () => {
     const [cipherMode, setCipherMode] = useState<"encrypt" | "decrypt">("encrypt");
 
     // ChaCha20 Cipher Function
-    const chaCha20Cipher = (text: string, key: number[], nonce: number, counter: number, mode: "encrypt" | "decrypt") => {
+    const chaCha20Cipher = (text: string, key: number[], nonce: number, counter: number) => {
         const quarterRounds = (state: number[]) => {
             for (let i = 0; i < 10; i++) {
                 state[0] += state[4]; state[12] ^= state[0]; state[12] = (state[12] >>> 16) | (state[12] << 16);
@@ -51,10 +51,10 @@ const ChaChaCipher20 = () => {
         const counterValue = 0; // Replace with actual counter logic
 
         if (cipherMode === "encrypt") {
-            const encryptedText = chaCha20Cipher(inputText, keyArray, nonceValue, counterValue, "encrypt");
+            const encryptedText = chaCha20Cipher(inputText, keyArray, nonceValue, counterValue);
             setResultText(encryptedText);
         } else {
-            const decryptedText = chaCha20Cipher(inputText, keyArray, nonceValue, counterValue, "decrypt");
+            const decryptedText = chaCha20Cipher(inputText, keyArray, nonceValue, counterValue);
             setResultText(decryptedText);
         }
     };

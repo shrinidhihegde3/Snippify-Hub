@@ -23,7 +23,7 @@ const AffineCipher = () => {
   const handleSubmit = () => {
     const a = parseInt(keyA);
     const b = parseInt(keyB);
-    
+
     if (!text || isNaN(a) || isNaN(b) || gcd(a, 26) !== 1) {
       alert("Please enter valid inputs! Ensure 'a' is coprime with 26.");
       return;
@@ -43,11 +43,12 @@ const AffineCipher = () => {
     for (let i = 0; i < message.length; i++) {
       let char = message[i];
       if (char.match(/[A-Za-z]/)) {
-        let x = char.toUpperCase().charCodeAt(0) - 65;
+        let base = char.charCodeAt(0) < 97 ? 65 : 97;
+        let x = char.charCodeAt(0) - base;
         let cipherChar = (a * x + b) % 26;
-        result += String.fromCharCode(cipherChar + 65);
+        result += String.fromCharCode(cipherChar + base);
       } else {
-        result += char; // non-alphabet characters remain unchanged
+        result += char;
       }
     }
     return result;
@@ -64,9 +65,10 @@ const AffineCipher = () => {
     for (let i = 0; i < cipherText.length; i++) {
       let char = cipherText[i];
       if (char.match(/[A-Za-z]/)) {
-        let y = char.toUpperCase().charCodeAt(0) - 65;
+        let base = char.charCodeAt(0) < 97 ? 65 : 97;
+        let y = char.charCodeAt(0) - base;
         let plainChar = (a_inv * (y - b + 26)) % 26;
-        result += String.fromCharCode(plainChar + 65);
+        result += String.fromCharCode(plainChar + base);
       } else {
         result += char;
       }
@@ -74,7 +76,7 @@ const AffineCipher = () => {
     return result;
   };
 
-    const pythonCode = `
+  const pythonCode = `
         import math
 
         # Function to calculate modular inverse of a mod m
@@ -129,7 +131,7 @@ const AffineCipher = () => {
 
     `;
 
-    const cppCode = `
+  const cppCode = `
         #include <iostream>
         #include <string>
         using namespace std;
@@ -199,7 +201,7 @@ const AffineCipher = () => {
         }
     `;
 
-    const javaCode = `
+  const javaCode = `
         import java.util.Scanner;
 
         public class AffineCipher {
@@ -276,31 +278,38 @@ const AffineCipher = () => {
         <div className="mt-8">
           <h2 className="text-2xl font-semibold mb-2">Use Case</h2>
           <p className="mb-4">
-            The Affine cipher is a type of monoalphabetic substitution cipher, commonly used in classical cryptography.
-            It's useful for encrypting simple messages and is often used in educational settings to teach cryptographic
-            principles like modular arithmetic and linear transformations.
+            The Affine cipher is a type of monoalphabetic substitution cipher,
+            commonly used in classical cryptography. It's useful for encrypting
+            simple messages and is often used in educational settings to teach
+            cryptographic principles like modular arithmetic and linear
+            transformations.
           </p>
 
           <h2 className="text-2xl font-semibold mb-2">How to Use</h2>
           <p className="mb-4">
-            Enter the keys 'a' and 'b' for the affine transformation, and provide the message to encrypt or decrypt. Ensure
-            that 'a' is coprime with 26 to enable encryption.
+            Enter the keys 'a' and 'b' for the affine transformation, and
+            provide the message to encrypt or decrypt. Ensure that 'a' is
+            coprime with 26 to enable encryption.
           </p>
         </div>
 
         <div className="mb-4">
           <input
             type="number"
-            placeholder="Enter key 'a'"
+            placeholder="Enter key 'a', ex: 5"
             value={keyA}
-            onChange={(e) => setKeyA(e.target.value)}
+            onChange={(e) => {
+              setKeyA(e.target.value);
+            }}
             className="border border-purple-600 p-3 mb-4 w-full text-black rounded-lg focus:outline-none focus:border-purple-800 focus:ring-2 focus:ring-purple-600"
           />
           <input
             type="number"
-            placeholder="Enter key 'b'"
+            placeholder="Enter key 'b', ex: 8"
             value={keyB}
-            onChange={(e) => setKeyB(e.target.value)}
+            onChange={(e) => {
+              setKeyB(e.target.value);
+            }}
             className="border border-purple-600 p-3 mb-4 w-full text-black rounded-lg focus:outline-none focus:border-purple-800 focus:ring-2 focus:ring-purple-600"
           />
           <textarea
