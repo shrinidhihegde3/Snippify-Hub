@@ -28,6 +28,7 @@ import WebScraper from "./snippets/Python/Web-scraper";
 import AffineCipher from "./snippets/Ciphers/Affine-cipher";
 import CaeserCipher from "./snippets/Ciphers/CaeserCipher";
 import OAuth2_Authorization from "./snippets/javascript/OAuth2_Authorization";
+import ResponsiveLayout from "./snippets/ResponsiveLayout/ResponsiveLayout";
 
 import { useState } from "react";
 const App = () => {
@@ -74,6 +75,7 @@ const App = () => {
             <Route path="/Web-scraper" element={<WebScraper />} />
             <Route path="/affine-cipher" element={<AffineCipher />} />
             <Route path="/caesercipher" element={<CaeserCipher />} />
+            <Route path="/ResponsiveLayout" element={<ResponsiveLayout/>} />
           </Routes>
         </div>
       </Box>
