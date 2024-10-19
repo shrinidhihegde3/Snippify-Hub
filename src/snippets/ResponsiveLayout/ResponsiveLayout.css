@@ -1,0 +1,83 @@
+/* (*) and resets their margin and padding to zero. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+/*  this code defines a CSS Grid layout for screens larger than 768px */
+.container {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+/* Each item in the grid is assigned a grid-area to correspond with the grid layout */
+.header {
+  grid-area: header;
+  background-color: #3a86ff;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #8338ec;
+  padding: 20px;
+  color: white;
+}
+
+.main {
+  grid-area: main;
+  background-color: #ffbe0b;
+  padding: 20px;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #fb5607;
+  padding: 20px;
+  color: white;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #ff006e;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+/* For screens smaller than 768px, the layout changes to Flexbox & This is a common responsive design approach */
+/* @media (max-width: 768px): This media query applies the following styles only when the screen width is 768px or less (typically mobile or tablet screens) */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header, .nav, .main, .aside, .footer {
+    margin-bottom: 10px;
+  }
+}
+
+/* Grid layout: Ideal for larger screens, where you can take advantage of structured, multi-column layouts */
+/* Flexbox layout: Excellent for mobile screens, where vertical stacking simplifies navigation */
+/* The code provides a responsive solution that adapts to different screen sizes, improving user experience across devices */
