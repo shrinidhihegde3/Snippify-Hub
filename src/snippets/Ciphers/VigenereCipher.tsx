@@ -185,16 +185,63 @@ public class VigenereCipher {
         <div className="mt-8">
           <h2 className="text-2xl font-semibold mb-2">Use Case</h2>
           <p className="mb-4">
-            The Vigenère cipher is a method of encrypting alphabetic text by
+          The Vigenère cipher is a method of encrypting alphabetic text by
             using a simple form of polyalphabetic substitution, making it
-            stronger than simple monoalphabetic ciphers.
+            stronger than simple monoalphabetic ciphers. In simpler terms, it
+            scrambles letters using a keyword to create a more complex pattern,
+            which makes it much harder for someone to decode the message without
+            knowing the keyword.
+          </p>
+          <p className="mb-4">
+            How Does It Work?
+          </p>
+          <p className="mb-4">
+            <strong>Alphabet Basics:</strong> In a simple cipher, each letter is replaced by another letter in a fixed way. For example, with a Caesar cipher, you might shift every letter by 3 places (A becomes D, B becomes E, etc.). This method is predictable and can be easily broken if someone is trying to figure it out.
+          </p>
+          <p className="mb-4">
+            <strong>Using a Keyword:</strong> The Vigenère cipher uses a keyword (like a secret code) to change the way letters are scrambled. The keyword is repeated to match the length of the message. For example, if your keyword is "KEY" and your message is "HELLO", you repeat "KEY" to get "KEYKE".
+          </p>
+          <p className="mb-4">
+            <strong>Letter Shifting:</strong> Each letter in your message is shifted based on the corresponding letter in the keyword. If you are encrypting the letter "H" (which is the 8th letter in the alphabet) and the corresponding letter in the keyword is "K" (the 11th letter), you shift "H" by 10 places (because "K" is the 11th letter). So "H" becomes "R".
+          </p>
+          <p className="mb-4">
+            <strong>Different Shifts for Each Letter:</strong> Since the keyword can have different letters, the shifts will change for each letter in the message. This makes it much harder for someone to guess how the letters are being scrambled, because the same letter can be encrypted in different ways depending on its position and the keyword.
+          </p>
+          <p className="mb-4">
+            <strong>Why Is It Stronger?</strong>
+          </p>
+          <p className="mb-4">
+            <strong>More Complexity:</strong> Because the Vigenère cipher uses different shifts for different letters, it creates a more complex pattern compared to a simple substitution cipher. This makes it much harder for someone to crack the code using frequency analysis (a common method for breaking ciphers by studying letter frequencies).
+          </p>
+
+          <h2 className="text-2xl font-semibold mb-2">Real-World Applications and Use Cases</h2>
+          <p className="mb-4">
+            Historically, the Vigenère cipher was used for centuries in encrypting military, diplomatic, and personal communications. Its strength lies in the fact that the same letter can be encrypted in different ways, making frequency analysis, which works on monoalphabetic ciphers, much harder to perform. Despite its vulnerabilities to modern cryptanalysis techniques, it was considered unbreakable until the late 19th century.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">1. Historical Encryption of Sensitive Messages</h3>
+          <p className="mb-4">
+            The Vigenère cipher was notably used by the Confederate Army during the American Civil War to protect military correspondence. Before the advent of modern cryptography, it provided a strong means of encrypting messages that would otherwise be susceptible to basic decoding techniques.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">2. Modern Educational Use</h3>
+          <p className="mb-4">
+            While the cipher itself is outdated for modern cryptographic purposes, it is still widely used in education to teach basic principles of encryption. This is because it illustrates the concept of a polyalphabetic substitution cipher, which is foundational to understanding more complex cryptographic systems. Many introductory courses in cryptography or data security still use the Vigenère cipher as an example of historical encryption techniques.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">3. Classic Ciphers in Puzzles and Escape Rooms</h3>
+          <p className="mb-4">
+            The Vigenère cipher is also commonly used in puzzles, escape rooms, and cryptographic challenges. Enthusiasts in puzzle-solving and cryptography often include Vigenère-encoded messages to test a player’s knowledge of classical cryptography. In these contexts, the cipher serves as a fun and challenging tool for users to decrypt hidden messages or clues.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">4. Data Obfuscation in Applications</h3>
+          <p className="mb-4">
+            Although it’s not recommended for securing sensitive information today due to vulnerabilities against modern cryptanalysis, the Vigenère cipher can still be used for simple data obfuscation in applications where cryptographic strength is not a major concern. For example, it can be used in games to hide game data or in basic applications where a lightweight cipher is needed without the overhead of modern encryption algorithms.
           </p>
 
           <h2 className="text-2xl font-semibold mb-2">How to Use</h2>
           <p className="mb-4">
-            Enter a keyword for the cipher key and the message to encrypt or
-            decrypt. This cipher uses the key to perform a repeating series of
-            Caesar ciphers.
+            Enter a keyword for the cipher key and the message to encrypt or decrypt. The Vigenère cipher uses the key to perform a series of shifting Caesar ciphers, where each letter is shifted based on the corresponding character in the key. This can be useful for encrypting or decrypting alphabetic text, where the strength of the cipher increases with the length and randomness of the key.
           </p>
         </div>
 
@@ -253,20 +300,20 @@ public class VigenereCipher {
       </div>
 
       <CodeSnippet
-      language="python"
-      code={pythonCode}
-      codeTitle="Vigenère Cipher - Python"
-    />
-    <CodeSnippet
-      language="cpp"
-      code={cppCode}
-      codeTitle="Vigenère Cipher - C++"
-    />
-    <CodeSnippet
-      language="java"
-      code={javaCode}
-      codeTitle="Vigenère Cipher - Java"
-    />
+        language="python"
+        code={pythonCode}
+        codeTitle="Vigenère Cipher - Python"
+      />
+      <CodeSnippet
+        language="cpp"
+        code={cppCode}
+        codeTitle="Vigenère Cipher - C++"
+      />
+      <CodeSnippet
+        language="java"
+        code={javaCode}
+        codeTitle="Vigenère Cipher - Java"
+      />
     </div>
   );
 };

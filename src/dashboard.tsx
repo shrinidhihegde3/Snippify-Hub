@@ -28,7 +28,9 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
     { title: "Affine Cipher", route: "/affine-cipher" },
     { title: "Caeser Cipher", route: "/caesercipher" },
     { title: "Vigenère Cipher", route: "/vigenere-cipher" },
-    { title: "OAuth2", route: "/OAuth2_Authorization"}
+    { title: "SHA-3 Hashing Algorithm", route: "/sha3-hash" },
+    { title: "OAuth2", route: "/OAuth2_Authorization"},
+    { title: "Advanced Encryption Standard (AES)", route: "/aes"}
   ];
 
   const filteredCards = cards.filter((card) =>
