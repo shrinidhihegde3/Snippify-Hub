@@ -27,6 +27,7 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
     { title: "Web Scraper", route: "/Web-scraper" },
     { title: "Affine Cipher", route: "/affine-cipher" },
     { title: "Caeser Cipher", route: "/caesercipher" },
+    { title: "Vigenère Cipher", route: "/vigenere-cipher" },
     { title: "OAuth2", route: "/OAuth2_Authorization"}
   ];
 
