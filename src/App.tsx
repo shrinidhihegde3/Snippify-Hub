@@ -31,6 +31,9 @@ import OAuth2_Authorization from "./snippets/javascript/OAuth2_Authorization";
 
 import { useState } from "react";
 import ChaChaCipher20 from "./snippets/Ciphers/ChaCha20-cipher";
+import VigenereCipher from "./snippets/Ciphers/VigenereCipher";
+import SHA3Hash from "./snippets/Algorithm/SHA3Hash";
+import AESComponent from "./snippets/Algorithm/AES";
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   return (
@@ -76,6 +79,9 @@ const App = () => {
             <Route path="/Web-scraper" element={<WebScraper />} />
             <Route path="/affine-cipher" element={<AffineCipher />} />
             <Route path="/caesercipher" element={<CaeserCipher />} />
+            <Route path="/vigenere-cipher" element={<VigenereCipher />} />
+            <Route path="/sha3-hash" element={<SHA3Hash />} />
+            <Route path="/aes" element={<AESComponent />} />
           </Routes>
         </div>
       </Box>
