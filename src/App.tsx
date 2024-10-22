@@ -23,11 +23,13 @@ import PalindromeChecker from "./snippets/palindromeChecker/palindrome";
 import BreadthFirstSearch from "./snippets/C++/BreadthFirstSearch";
 import BlowfishCipher from "./snippets/Ciphers/BlowfishCipher";
 import HillCipher from "./snippets/Ciphers/HillCipher";
+import PlayfairCipher from "./snippets/Ciphers/PlayfairCipher";
 import ListComprehension from "./snippets/Python/Listcomprehension";
 import WebScraper from "./snippets/Python/Web-scraper";
 import AffineCipher from "./snippets/Ciphers/Affine-cipher";
 import CaeserCipher from "./snippets/Ciphers/CaeserCipher";
 import OAuth2_Authorization from "./snippets/javascript/OAuth2_Authorization";
+
 
 import { useState } from "react";
 import ChaChaCipher20 from "./snippets/Ciphers/ChaCha20-cipher";
@@ -74,6 +76,7 @@ const App = () => {
             <Route path="/checkPalindrome" element={<PalindromeChecker />} />
             <Route path="/blowfishcipher" element={<BlowfishCipher />} />
             <Route path="/hillcipher" element={<HillCipher />} />
+            <Route path="/playfaircipher" element={<PlayfairCipher />} />
             <Route path="/chacha_cipher20" element={<ChaChaCipher20 />} />
             <Route path="/listcomprehension" element={<ListComprehension />} />
             <Route path="/Web-scraper" element={<WebScraper />} />
