@@ -29,8 +29,8 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
     { title: "Caeser Cipher", route: "/caesercipher" },
     { title: "Vigenère Cipher", route: "/vigenere-cipher" },
     { title: "SHA-3 Hashing Algorithm", route: "/sha3-hash" },
-    { title: "OAuth2", route: "/OAuth2_Authorization"},
-    { title: "Advanced Encryption Standard (AES)", route: "/aes"}
+    { title: "OAuth2", route: "/OAuth2_Authorization" },
+    { title: "Advanced Encryption Standard (AES)", route: "/aes" },
   ];
 
   const filteredCards = cards.filter((card) =>
@@ -57,7 +57,10 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
           <Card title="Dijkstra Algorithm" route="/dijkstraalgorithm" />
           <Card title="Jwt Authentication Flow" route="/jwtauthentication" />
           <Card title="Thread Synchronization" route="/threadsynchronization" />
-          <Card title="Thread Synchronization Java" route="/threadsynchronizationJava" />
+          <Card
+            title="Thread Synchronization Java"
+            route="/threadsynchronizationJava"
+          />
 
           <Card title="Fetch API" route="/fetchAPI" />
           <Card title="Axios" route="/axios" />
@@ -66,10 +69,11 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
           <Card title="Blowfish Cipher" route="/blowfishcipher" />
           <Card title="Hill Cipher" route="/hillcipher" />
           <Card title="Playfair Cipher" route="/playfaircipher" />
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
-          {filteredCards.map((card) => (
-            <Card key={card.title} title={card.title} route={card.route} />
-          ))}
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
+            {filteredCards.map((card) => (
+              <Card key={card.title} title={card.title} route={card.route} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
