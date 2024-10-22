@@ -74,6 +74,31 @@ Contributors are awarded points based on the quality and complexity of their con
 
 ## [Contribution Points Table](https://docs.google.com/spreadsheets/d/1hIlVf_ihUG4SuDe_o4330SGlZacrRw6Guigw39m9wmg/edit?gid=0#gid=0)
 
+<br>
+
+## Contributors
+
+A heartfelt thank you to the following individuals for their valuable contributions to this project. Your support and dedication are greatly appreciated:
+
+<!-- readme: contributors -start -->
+@yatinsharmaa12
+@chinmayr633
+@Rajmathur-8
+@Harsh-Aakoliya
+@krishnaagrawal7508
+@ajay0180
+@anshuman008
+@kajal-jotwani
+@SanskariWolf
+@yashksaini-coder
+<!-- readme: contributors -end -->
+
+
+<div align="right">
+    <a href="#top">
+        <img src="https://img.shields.io/badge/Back%20to%20Top-000000?style=for-the-badge&logo=github&logoColor=white" alt="Back to Top">
+    </a>
+</div>
 
 
 
