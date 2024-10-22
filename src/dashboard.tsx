@@ -30,6 +30,7 @@ const Dashboard = () => {
           <Card title="WebSocket" route="/WebSocket" />
           <Card title="Blowfish Cipher" route="/blowfishcipher" />
           <Card title="Hill Cipher" route="/hillcipher" />
+          <Card title="Playfair Cipher" route="/playfaircipher" />
         </div>
       </div>
     </div>

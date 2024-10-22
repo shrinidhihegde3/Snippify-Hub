@@ -24,6 +24,7 @@ import PalindromeChecker from "./snippets/palindromeChecker/palindrome";
 import BreadthFirstSearch from "./snippets/C++/BreadthFirstSearch";
 import BlowfishCipher from "./snippets/Ciphers/BlowfishCipher";
 import HillCipher from "./snippets/Ciphers/HillCipher";
+import PlayfairCipher from "./snippets/Ciphers/PlayfairCipher";
 
 const App = () => {
   return (
@@ -63,6 +64,7 @@ const App = () => {
             <Route path="/checkPalindrome" element={<PalindromeChecker />} />
             <Route path="/blowfishcipher" element={<BlowfishCipher />} />
             <Route path="/hillcipher" element={<HillCipher />} />
+            <Route path="/playfaircipher" element={<PlayfairCipher />} />
           </Routes>
         </div>
       </Box>
