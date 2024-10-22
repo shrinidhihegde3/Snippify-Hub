@@ -37,6 +37,7 @@ import Footer from "./components/Footer";
 import VigenereCipher from "./snippets/Ciphers/VigenereCipher";
 import SHA3Hash from "./snippets/Algorithm/SHA3Hash";
 import AESComponent from "./snippets/Algorithm/AES";
+import VernamCipher from "./snippets/Ciphers/VernamCipher";
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   return (
@@ -86,6 +87,7 @@ const App = () => {
             <Route path="/vigenere-cipher" element={<VigenereCipher />} />
             <Route path="/sha3-hash" element={<SHA3Hash />} />
             <Route path="/aes" element={<AESComponent />} />
+            <Route path="/vernam-cipher" element={<VernamCipher />} />
           </Routes>
           <Footer></Footer>
         </div>
