@@ -181,6 +181,46 @@ public class SHA3Example {
           <p className="mb-4">
             - <a href="https://en.wikipedia.org/wiki/SHA-3" className="text-blue-600">Wikipedia on SHA-3</a>: Overview of SHA-3, including its history, specifications, and applications.
           </p>
+          <h2 className="text-2xl font-semibold mb-2">How to Implement SHA-3 Hash Generator</h2>
+<p className="mb-4">
+  The SHA-3 Hash Generator component is built using React and the <code>js-sha3</code> library, which provides a convenient way to compute SHA-3 hash values. This section explains the key parts of the implementation and how they work.
+</p>
+<h3 className="text-xl font-semibold mb-2">1. Importing Required Libraries</h3>
+<p className="mb-4">
+  To implement this component, we first need to import <code>useState</code> from React to manage state, and <code>keccak256</code> from the <code>js-sha3</code> library to perform the hash computation. You can install the <code>js-sha3</code> package using npm:
+</p>
+<pre className="bg-gray-800 text-white p-4 rounded-lg mb-4"><code>npm install js-sha3</code></pre>
+<p className="mb-4">
+  After installation, import the necessary libraries as follows:
+</p>
+<pre className="bg-gray-800 text-white p-4 rounded-lg mb-4"><code>{`import { useState } from "react";\nimport { keccak256 } from "js-sha3";`}</code></pre>
+
+<h3 className="text-xl font-semibold mb-2">2. Setting Up State</h3>
+<p className="mb-4">
+  In React, state is used to store and manage dynamic data. In this component, we use <code>useState</code> to create two state variables: <code>inputText</code> to hold the user's input and <code>hashOutput</code> to hold the resulting hash.
+</p>
+<pre className="bg-gray-800 text-white p-4 rounded-lg mb-4"><code>{`const [inputText, setInputText] = useState("");\nconst [hashOutput, setHashOutput] = useState("");`}</code></pre>
+<p className="mb-4">
+  This allows us to dynamically update the values as the user interacts with the component.
+</p>
+
+<h3 className="text-xl font-semibold mb-2">3. Handling User Input and Hash Generation</h3>
+<p className="mb-4">
+  The <code>handleHash</code> function is triggered when the user clicks the "Hash" button. It checks if the input is valid (i.e., not empty), and if valid, it uses the <code>keccak256</code> function to compute the SHA-3 hash of the input text. The result is stored in <code>hashOutput</code>, which is then displayed to the user.
+</p>
+<pre className="bg-gray-800 text-white p-4 rounded-lg mb-4"><code>{`const handleHash = () => {\n  if (!inputText) {\n    alert("Please enter a valid input!");\n    return;\n  }\n  const hash = keccak256(inputText);\n  setHashOutput(hash);\n};`}</code></pre>
+
+<h3 className="text-xl font-semibold mb-2">4. Rendering the UI</h3>
+<p className="mb-4">
+  The UI consists of two <code>textarea</code> elements for input and output, and a button that triggers the hash generation. When the user enters text and clicks the button, the hash is computed and displayed in the output area. Here's how the UI components are structured:
+</p>
+<pre className="bg-gray-800 text-white p-4 rounded-lg mb-4"><code>{`<textarea value={inputText} onChange={(e) => setInputText(e.target.value)} />\n<button onClick={handleHash}>Hash</button>\n<textarea value={hashOutput} readOnly />`}</code></pre>
+
+<h3 className="text-xl font-semibold mb-2">5. Code Snippets for Other Languages</h3>
+<p className="mb-4">
+  Additionally, code snippets for SHA-3 hash generation in other languages (JavaScript, Python, C++, and Java) are provided using the <code>CodeSnippet</code> component. These snippets offer examples of how the Keccak algorithm can be implemented in different programming environments.
+</p>
+
         </div>
 
         <div className="mb-4">
