@@ -25,3 +25,9 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.8); /* Color of the thumb on hover */
 }
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}

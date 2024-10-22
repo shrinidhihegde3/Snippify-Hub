@@ -31,6 +31,7 @@ import OAuth2_Authorization from "./snippets/javascript/OAuth2_Authorization";
 
 import { useState } from "react";
 import ChaChaCipher20 from "./snippets/Ciphers/ChaCha20-cipher";
+import Footer from "./components/Footer";
 import VigenereCipher from "./snippets/Ciphers/VigenereCipher";
 import SHA3Hash from "./snippets/Algorithm/SHA3Hash";
 import AESComponent from "./snippets/Algorithm/AES";
@@ -39,7 +40,7 @@ const App = () => {
   return (
     <Router>
       <Box>
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center overflow-x-hidden">
           <Navbar setSearchTerm={setSearchTerm} />
           <Routes>
             <Route path="/" element={<Dashboard searchTerm={searchTerm} />} />
@@ -83,6 +84,7 @@ const App = () => {
             <Route path="/sha3-hash" element={<SHA3Hash />} />
             <Route path="/aes" element={<AESComponent />} />
           </Routes>
+          <Footer></Footer>
         </div>
       </Box>
     </Router>
