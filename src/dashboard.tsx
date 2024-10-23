@@ -32,6 +32,7 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
     { title: "OAuth2", route: "/OAuth2_Authorization" },
     { title: "Advanced Encryption Standard (AES)", route: "/aes" },
     { title: "Playfair Cipher", route: "/playfaircipher" },
+    { title: "Vernam Cipher (One-Time Pad)", route: "/vernam-cipher"}
   ];
 
   const filteredCards = cards.filter((card) =>
@@ -41,11 +42,9 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
     <div>
       <div className="w-full flex flex-col items-center">
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
-          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
-            {filteredCards.map((card) => (
-              <Card key={card.title} title={card.title} route={card.route} />
-            ))}
-          </div>
+          {filteredCards.map((card) => (
+            <Card key={card.title} title={card.title} route={card.route} />
+          ))}
         </div>
       </div>
     </div>
