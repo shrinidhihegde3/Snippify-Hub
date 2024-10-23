@@ -42,7 +42,7 @@ const ContributorsSlider: React.FC = () => {
         <div className='flex flex-row gap-16 '>
         {contributors.map((contributor) => (
           <div key={contributor.login} className="flex flex-col items-center">
-            <a href={contributor.url} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+            <a href={"https://github.com/"+contributor.login} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
               <img
                 src={contributor.avatar_url}
                 alt={contributor.login}
