@@ -7,7 +7,7 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
     { title: "Heap Sort", route: "/heapsort" },
     { title: "A Star", route: "/astar" },
     { title: "ChaCha20 Cipher", route: "/chacha_cipher20" },
-    { title: "Binary Search", route: "/binaysearch" },
+    { title: "Binary Search", route: "/binarysearch" },
     { title: "Depth First Search", route: "/dfs" },
     { title: "Breadth First Search", route: "/bfs" },
     { title: "Bellman Ford", route: "/bellmanford" },
