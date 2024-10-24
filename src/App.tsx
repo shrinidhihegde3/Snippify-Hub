@@ -50,7 +50,7 @@ const App = () => {
             <Route path="/bubblesort" element={<BubbleSort />} />
             <Route path="/mergesort" element={<MergeSort />} />
             <Route path="/astar" element={<AStar />} />
-            <Route path="/binaysearch" element={<BinarySearch />} />
+            <Route path="/binarysearch" element={<BinarySearch />} />
             <Route path="/dfs" element={<DepthFirstSearch />} />
             <Route path="/bfs" element={<BreadthFirstSearch />} />
             <Route path="/bellmanford" element={<BellmanFordCode />} />
