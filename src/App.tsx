@@ -85,7 +85,6 @@ const App = () => {
         <div className="w-full flex flex-col items-center overflow-x-hidden">
           <Navbar setSearchTerm={setSearchTerm} />
           <Routes>
-            {/* Map through the routes array to create Route components */}
             {routes.map((route, index) => (
               <Route key={index} path={route.path} element={route.element} />
             ))}
