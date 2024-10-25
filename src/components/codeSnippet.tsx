@@ -5,9 +5,10 @@ import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 interface CodeSnippetProps {
   code: string;
   language: string;
+  codeTitle?: string; // Optional prop for code title
 }
 
-const CodeSnippet: React.FC<CodeSnippetProps> = ({ language, code }) => {
+const CodeSnippet: React.FC<CodeSnippetProps> = ({ language, code, codeTitle }) => {
   const [copySuccess, setCopySuccess] = useState("");
 
   const copyToClipboard = () => {
@@ -24,6 +25,7 @@ const CodeSnippet: React.FC<CodeSnippetProps> = ({ language, code }) => {
 
   return (
     <div className="w-full max-w-sm sm:max-w-lg lg:max-w-4xl mx-auto bg-white/10 backdrop-blur-lg rounded-lg shadow-md border border-purple-900 p-4">
+      {codeTitle && <h3 className="text-lg font-semibold mb-2">{codeTitle}</h3>} {/* Render code title if provided */}
       <div className="flex justify-between items-center mb-2">
         <button
           onClick={copyToClipboard}

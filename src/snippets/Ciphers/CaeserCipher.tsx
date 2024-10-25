@@ -8,19 +8,26 @@ const CaesarCipher = () => {
   const [mode, setMode] = useState<"encrypt" | "decrypt">("encrypt");
 
   // Caesar Cipher Function
-  const CaesarCipherFunction = (message: string, shift: number, action: "encrypt" | "decrypt") => {
+  const CaesarCipherFunction = (
+    message: string,
+    shift: number,
+    action: "encrypt" | "decrypt"
+  ) => {
     let result = "";
     const shiftValue = action === "encrypt" ? shift : -shift;
 
     for (let i = 0; i < message.length; i++) {
       let charCode = message.charCodeAt(i);
 
+      // Check for uppercase letters
       if (charCode >= 65 && charCode <= 90) {
-        charCode = ((charCode - 65 + shiftValue + 26) % 26) + 65;
-      } else if (charCode >= 97 && charCode <= 122) {
-        charCode = ((charCode - 97 + shiftValue + 26) % 26) + 97;
+        charCode = ((((charCode - 65 + shiftValue) % 26) + 26) % 26) + 65; // Ensure positive modulo
       }
-
+      // Check for lowercase letters
+      else if (charCode >= 97 && charCode <= 122) {
+        charCode = ((((charCode - 97 + shiftValue) % 26) + 26) % 26) + 97; // Ensure positive modulo
+      }
+      // Non-alphabetic characters remain unchanged
       result += String.fromCharCode(charCode);
     }
 
@@ -97,7 +104,7 @@ const CaesarCipher = () => {
          System.out.println(decrypt(encrypt(message, 3), 3));
          sc.close();
      }
- }`
+ }`;
 
   const caeserciphercode = `def caesar_cipher(text, shift, mode='encrypt'):
   result = ''

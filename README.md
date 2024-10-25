@@ -6,6 +6,12 @@ Welcome to the **Code Snippet Repository**! This repository contains curated cod
 
 Star ⭐ | Fork 🔗 | Contribute 💻
 
+# [Google Form Link for Certificates](https://forms.gle/hNBwNn2rfaikn2Tz6)
+## Fill out this Google Form to get Certificates
+-Note: Only those who successfully contrubuted to this repo gets the certficate
+
+
+
 ## ✨ What This Repo Does
 
 This repository is designed to:
