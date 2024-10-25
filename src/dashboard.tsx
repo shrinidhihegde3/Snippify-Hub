@@ -32,7 +32,8 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
     { title: "OAuth2", route: "/OAuth2_Authorization" },
     { title: "Advanced Encryption Standard (AES)", route: "/aes" },
     { title: "Playfair Cipher", route: "/playfaircipher" },
-    { title: "Vernam Cipher (One-Time Pad)", route: "/vernam-cipher" }
+    { title: "Vernam Cipher (One-Time Pad)", route: "/vernam-cipher" },
+    { title: "Data Encryption Standard (DES)", route: "/des" }
   ];
 
   const filteredCards = cards.filter((card) =>
