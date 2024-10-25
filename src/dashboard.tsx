@@ -34,6 +34,7 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
     { title: "Playfair Cipher", route: "/playfaircipher" },
     { title: "Vernam Cipher (One-Time Pad)", route: "/vernam-cipher" },
     { title: "Data Encryption Standard (DES)", route: "/des" },
+    { title: "Diffie-Hellman Key Exchange", route: "/diffiehellman" },
     { title: "TwoFish", route: "/twofish" }
   ];
 

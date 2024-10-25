@@ -39,6 +39,7 @@ import SHA3Hash from "./snippets/Algorithm/SHA3Hash";
 import AESComponent from "./snippets/Algorithm/AES";
 import VernamCipher from "./snippets/Ciphers/VernamCipher";
 import DESCipher from "./snippets/Ciphers/Data-encryption-standard";
+import DiffieHellman from "./snippets/Ciphers/DiffieHellman";
 import TwofishCipher from "./snippets/Ciphers/twoFishCipher";
 
 const App = () => {
@@ -80,6 +81,7 @@ const App = () => {
     { path:"/aes" ,element:<AESComponent/>},
   	{path:"/vernam-cipher" ,element:<VernamCipher/>},
     {path:"/des" ,element:<DESCipher/>},
+    {path:"/diffiehellman" ,element:<DiffieHellman/>}
     {path:"/twofish" ,element:<TwofishCipher/>}
   ];
 
