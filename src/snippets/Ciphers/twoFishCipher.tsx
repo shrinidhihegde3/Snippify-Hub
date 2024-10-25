@@ -9,32 +9,43 @@ const TwofishCipher = () => {
   const [mode, setMode] = useState<"encrypt" | "decrypt">("encrypt");
 
   const handleTwofishEncryption = () => {
-    // Convert key and text to Uint8Array format
     const keyArray = new TextEncoder().encode(key);
-    const textArray = new TextEncoder().encode(text);
+  const textArray = new TextEncoder().encode(text);
 
-    if (keyArray.length !== 16 && keyArray.length !== 24 && keyArray.length !== 32) {
-      alert("Invalid key length! Twofish requires a 16, 24, or 32-byte key.");
-      return;
-    }
+  if (![16, 24, 32].includes(keyArray.length)) {
+    alert("Invalid key length! Twofish requires a 16, 24, or 32-byte key.");
+    return;
+  }
 
-    // Create a session with the given key
-    const session = makeSession(keyArray);
+  const session = makeSession(keyArray);
 
-    // Prepare output buffer
-    const outputArray = new Uint8Array(textArray.length);
+  if (mode === "encrypt") {
+    // Pad the plaintext array to a multiple of 16 bytes (PKCS7 padding)
+    const paddingSize = 16 - (textArray.length % 16);
+    const paddedTextArray = new Uint8Array(textArray.length + paddingSize);
+    paddedTextArray.set(textArray);
+    paddedTextArray.fill(paddingSize, textArray.length); // PKCS7 padding bytes
 
-    if (mode === "encrypt") {
-      // Encrypt input
-      encrypt(textArray, 0, outputArray, 0, session);
-    } else {
-      // Decrypt input
-      decrypt(textArray, 0, outputArray, 0, session);
-    }
+    const outputArray = new Uint8Array(paddedTextArray.length);
+    encrypt(paddedTextArray, 0, outputArray, 0, session);
 
-    // Convert Uint8Array back to string for display
-    const result = new TextDecoder().decode(outputArray);
-    setOutput(result);
+    const encryptedResult = Array.from(outputArray)
+      .map((byte) => String.fromCharCode(byte))
+      .join("");
+    setOutput(encryptedResult);
+  } else {
+    const encryptedArray = new Uint8Array(text.split("").map((char) => char.charCodeAt(0)));
+    const outputArray = new Uint8Array(encryptedArray.length);
+
+    decrypt(encryptedArray, 0, outputArray, 0, session);
+
+    // Remove PKCS7 padding after decryption
+    const paddingSize = outputArray[outputArray.length - 1];
+    const unpaddedArray = outputArray.slice(0, outputArray.length - paddingSize);
+
+    const decryptedText = new TextDecoder().decode(unpaddedArray);
+    setOutput(decryptedText);
+  }
   };
 
   const pythonCode = `

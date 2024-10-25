@@ -39,6 +39,7 @@ import SHA3Hash from "./snippets/Algorithm/SHA3Hash";
 import AESComponent from "./snippets/Algorithm/AES";
 import VernamCipher from "./snippets/Ciphers/VernamCipher";
 import DESCipher from "./snippets/Ciphers/Data-encryption-standard";
+import TwofishCipher from "./snippets/Ciphers/twoFishCipher";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -78,7 +79,8 @@ const App = () => {
     { path: "/sha3-hash", element: <SHA3Hash />} ,
     { path:"/aes" ,element:<AESComponent/>},
   	{path:"/vernam-cipher" ,element:<VernamCipher/>},
-    {path:"/des" ,element:<DESCipher/>}
+    {path:"/des" ,element:<DESCipher/>},
+    {path:"/twofish" ,element:<TwofishCipher/>}
   ];
 
   return (
