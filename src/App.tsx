@@ -81,7 +81,7 @@ const App = () => {
     { path:"/aes" ,element:<AESComponent/>},
   	{path:"/vernam-cipher" ,element:<VernamCipher/>},
     {path:"/des" ,element:<DESCipher/>},
-    {path:"/diffiehellman" ,element:<DiffieHellman/>}
+    {path:"/diffiehellman" ,element:<DiffieHellman/>},
     {path:"/twofish" ,element:<TwofishCipher/>}
   ];
 
