@@ -38,7 +38,6 @@ import VigenereCipher from "./snippets/Ciphers/VigenereCipher";
 import SHA3Hash from "./snippets/Algorithm/SHA3Hash";
 import AESComponent from "./snippets/Algorithm/AES";
 import VernamCipher from "./snippets/Ciphers/VernamCipher";
-import DESCipher from "./snippets/Ciphers/Data-encryption-standard";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -77,8 +76,7 @@ const App = () => {
     { path: "/vigenere-cipher", element: <VigenereCipher /> },
     { path: "/sha3-hash", element: <SHA3Hash />} ,
     { path:"/aes" ,element:<AESComponent/>},
-  	{path:"/vernam-cipher" ,element:<VernamCipher/>},
-    {path:"/data-encryption-standard" ,element:<DESCipher/>}
+  	{path:"/vernam-cipher" ,element:<VernamCipher/>}
   ];
 
   return (
