@@ -37,6 +37,7 @@ const Dashboard = ({ searchTerm }: { searchTerm: string }) => {
     { title: "Diffie-Hellman Key Exchange", route: "/diffiehellman" },
     { title: "TwoFish", route: "/twofish" },
     { title: "Elliptic Curve", route: "/elliptic" },
+    { title: "Triple DES", route: "/tripleDES" },
   ];
 
   const filteredCards = cards.filter((card) =>
