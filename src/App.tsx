@@ -42,6 +42,7 @@ import DESCipher from "./snippets/Ciphers/Data-encryption-standard";
 import DiffieHellman from "./snippets/Ciphers/DiffieHellman";
 import TwofishCipher from "./snippets/Ciphers/twoFishCipher";
 import EllipticCurveCryptography from "./snippets/Ciphers/ellipticCurve";
+import TripleDES from "./snippets/Ciphers/tripleDES";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -91,6 +92,7 @@ const App = () => {
     { path: "/diffiehellman", element: <DiffieHellman /> },
     { path: "/twofish", element: <TwofishCipher /> },
     { path: "/elliptic", element: <EllipticCurveCryptography /> },
+    { path: "/tripleDES", element: <TripleDES /> },
   ];
 
   return (
