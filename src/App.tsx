@@ -41,6 +41,7 @@ import VernamCipher from "./snippets/Ciphers/VernamCipher";
 import DESCipher from "./snippets/Ciphers/Data-encryption-standard";
 import DiffieHellman from "./snippets/Ciphers/DiffieHellman";
 import TwofishCipher from "./snippets/Ciphers/twoFishCipher";
+import EllipticCurveCryptography from "./snippets/Ciphers/ellipticCurve";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -55,18 +56,24 @@ const App = () => {
     { path: "/dfs", element: <DepthFirstSearch /> },
     { path: "/bfs", element: <BreadthFirstSearch /> },
     { path: "/bellmanford", element: <BellmanFordCode /> },
-    { path: "/rateLimitingMiddleware", element: <RateLimitingMiddlewareExpress /> },
+    {
+      path: "/rateLimitingMiddleware",
+      element: <RateLimitingMiddlewareExpress />,
+    },
     { path: "/debounceFunction", element: <DebounceFunction /> },
     { path: "/chainingPromises", element: <ChainingProimises /> },
     { path: "/heapSort", element: <HeapSort /> },
     { path: "/dijkstraalgorithm", element: <DijkstraAlgorithm /> },
     { path: "/jwtauthentication", element: <JWTAuthenticationFlow /> },
-    { path: "/threadsynchronization", element: <AdvancedMultiLangThreadSynchronization /> },
+    {
+      path: "/threadsynchronization",
+      element: <AdvancedMultiLangThreadSynchronization />,
+    },
     { path: "/fetchAPI", element: <FetchAPICode /> },
     { path: "/axios", element: <AxiosCode /> },
     { path: "/xmlhttprequest", element: <XMLHttpRequestCode /> },
     { path: "/WebSocket", element: <WebSocket /> },
-    { path: "/OAuth2_Authorization", element: <OAuth2_Authorization/> },
+    { path: "/OAuth2_Authorization", element: <OAuth2_Authorization /> },
     { path: "/checkPalindrome", element: <PalindromeChecker /> },
     { path: "/blowfishcipher", element: <BlowfishCipher /> },
     { path: "/hillcipher", element: <HillCipher /> },
@@ -77,12 +84,13 @@ const App = () => {
     { path: "/affine-cipher", element: <AffineCipher /> },
     { path: "/caesercipher", element: <CaeserCipher /> },
     { path: "/vigenere-cipher", element: <VigenereCipher /> },
-    { path: "/sha3-hash", element: <SHA3Hash />} ,
-    { path:"/aes" ,element:<AESComponent/>},
-  	{path:"/vernam-cipher" ,element:<VernamCipher/>},
-    {path:"/des" ,element:<DESCipher/>},
-    {path:"/diffiehellman" ,element:<DiffieHellman/>},
-    {path:"/twofish" ,element:<TwofishCipher/>}
+    { path: "/sha3-hash", element: <SHA3Hash /> },
+    { path: "/aes", element: <AESComponent /> },
+    { path: "/vernam-cipher", element: <VernamCipher /> },
+    { path: "/des", element: <DESCipher /> },
+    { path: "/diffiehellman", element: <DiffieHellman /> },
+    { path: "/twofish", element: <TwofishCipher /> },
+    { path: "/elliptic", element: <EllipticCurveCryptography /> },
   ];
 
   return (
