@@ -13,8 +13,8 @@ const generateSharedSecret = (
 ) => Math.pow(receivedPublicKey, privateKey) % prime;
 
 const DiffieHellman = () => {
-  const [base, setBase] = useState<number>(5); // Default base: 5
-  const [prime, setPrime] = useState<number>(23); // Default prime: 23
+  const base = 5; // Default base: 5
+  const prime = 23; // Default prime: 23
   const [privateKeyA, setPrivateKeyA] = useState<number>();
   const [privateKeyB, setPrivateKeyB] = useState<number>();
   const [sharedSecret, setSharedSecret] = useState<number | null>(null);
