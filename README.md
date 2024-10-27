@@ -8,6 +8,7 @@ Star ⭐ | Fork 🔗 | Contribute 💻
 
 # [Google Form Link for Certificates](https://forms.gle/hNBwNn2rfaikn2Tz6)
 ## Fill out this Google Form to get Certificates
+-Note: The Link will open till NOVEMBER 6th, make sure you fill this form before that.
 -Note: Only those who successfully contrubuted to this repo gets the certficate
 
 
